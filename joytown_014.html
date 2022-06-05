@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <title>joytown</title>
+    </head>
+    <body>
+        
+        <main id="content" class="board">
+            <div class="container-fluid">
+                <section class="board-pop usr-setting">
+                    <div class="container">
+                        <div class="section-header">
+                            <h3>설정</h3>
+                            <button type="button" class="btn-close">
+                                <img src="./assets/images/ico_close.png" alt="">
+                            </button>
+                        </div>
+                        <div class="section-content">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/images/img_character.png" alt="">
+                                </div>
+                                <div class="btn-area">
+                                    <a href="#" class="btn-modify">캐릭터 변경</a>
+                                </div>
+                            </div>
+                            <div class="usr-info">
+                                <figure>
+                                    <img src="./assets/images/usr_img.png" alt="">
+                                </figure>
+                                <div class="details">
+                                    <div class="info">
+                                        <ul>
+                                            <li>닉네임</li>
+                                            <li>새소년</li>
+                                        </ul>
+                                        <div class="btn-area">
+                                            <a href="#" class="btn-modify">정보 변경</a>
+                                        </div>
+                                    </div>
+                                    <div class="controls">
+                                        <ul>
+                                            <li>
+                                                <dl>
+                                                    <dt>닉네임</dt>
+                                                    <dd>
+                                                        <div class="btn-setting">
+                                                            <a href="javascript:;" class="btn-hidden">숨김</a>
+                                                            <div class="bar">
+                                                                <a href="javascript:;"></a>
+                                                            </div>
+                                                            <a href="javascript:;" class="btn-visible">보임</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>썸네일</dt>
+                                                    <dd>
+                                                        <div class="btn-setting hidden">
+                                                            <a href="javascript:;" class="btn-hidden">숨김</a>
+                                                            <div class="bar">
+                                                                <a href="javascript:;"></a>
+                                                            </div>
+                                                            <a href="javascript:;" class="btn-visible">보임</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>배경음</dt>
+                                                    <dd>
+                                                        <div class="btn-setting">
+                                                            <a href="javascript:;" class="btn-hidden">숨김</a>
+                                                            <div class="bar">
+                                                                <a href="javascript:;"></a>
+                                                            </div>
+                                                            <a href="javascript:;" class="btn-visible">보임</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl>
+                                                    <dt>아이콘</dt>
+                                                    <dd>
+                                                        <div class="btn-setting">
+                                                            <a href="javascript:;" class="btn-hidden">숨김</a>
+                                                            <div class="bar">
+                                                                <a href="javascript:;"></a>
+                                                            </div>
+                                                            <a href="javascript:;" class="btn-visible">보임</a>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            (function($){
+                // popup 닫기
+                $(document).on('click', '.btn-close', function(){
+                    $('.board-pop').hide();
+                });
+                
+                // 셋팅 관련
+                $(document).on('click', '.btn-setting .bar > a', function(){
+                    $(this).parents('.btn-setting').toggleClass('hidden');
+                });
+                $(document).on('click', '.btn-setting .btn-hidden', function(){
+                    $(this).parent().removeClass('hidden');
+                });
+                $(document).on('click', '.btn-setting .btn-visible', function(){
+                    $(this).parent().addClass('hidden');
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

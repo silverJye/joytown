@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <title>joytown</title>
+    </head>
+    <body>
+        
+        <main id="content" class="board">
+            <div class="container-fluid">
+                <section class="board-pop board-photo">
+                    <div class="container">
+                        <div class="section-header">
+                            <h3>게시판</h3>
+                            <button type="button" class="btn-close">
+                                <img src="./assets/images/ico_close.png" alt="">
+                            </button>
+                        </div>
+                        <div class="section-content">
+                            <div class="swiper photo-slide">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./assets/images/img_slide01.png" alt="">
+                                                <figcaption>
+                                                    안녕하세요. 게시판 제목입니다.
+                                                    2줄 제목입니다.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./assets/images/img_slide02.png" alt="">
+                                                <figcaption>
+                                                    안녕하세요. 게시판 제목입니다.
+                                                    2줄 제목입니다.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./assets/images/img_slide03.png" alt="">
+                                                <figcaption>
+                                                    안녕하세요. 게시판 제목입니다.
+                                                    2줄 제목입니다.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./assets/images/img_slide01.png" alt="">
+                                                <figcaption>
+                                                    안녕하세요. 게시판 제목입니다.
+                                                    2줄 제목입니다.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./assets/images/img_slide02.png" alt="">
+                                                <figcaption>
+                                                    안녕하세요. 게시판 제목입니다.
+                                                    2줄 제목입니다.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="./assets/images/img_slide03.png" alt="">
+                                                <figcaption>
+                                                    안녕하세요. 게시판 제목입니다.
+                                                    2줄 제목입니다.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-area">
+                                <a href="#" class="btn-write">글쓰기</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            (function($){
+                // popup 닫기
+                $(document).on('click', '.btn-close', function(){
+                    $('.board-pop').hide();
+                });
+                
+                // photo-slide
+                var swiper = new Swiper(".photo-slide", {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                    breakpoints: {
+                        1024: {
+                            slidesPerView: 3.5,
+                            spaceBetween: 20,
+                        },
+                    },
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

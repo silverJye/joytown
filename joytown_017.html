@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <title>joytown</title>
+    </head>
+    <body>
+        
+        <main id="content" class="board member type-2">
+            <h3>아이디 비밀번호 찾기</h3>
+            <article class="pw-form">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>이름</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="이름을 입력해주세요.">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>이메일</dt>
+                                <dd>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="가입시 등록한 이메일을 입력하세요.">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="btn-area">
+                        <button type="submit" class="btn-pw">비밀번호 찾기</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            (function($){
+                // popup 닫기
+                $(document).on('click', '.btn-close', function(){
+                    $('.board-pop').hide();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <title>joytown</title>
+    </head>
+    <body>
+        
+        <main id="content" class="board member type-2">
+            <h3>회원가입</h3>
+            <article class="join">
+                <div class="container">
+                    <div class="terms">
+                        <h4>회원가입 약관</h4>
+                        <div class="content">
+                            회원가입을 입력해 주세요
+                        </div>
+                        <label><input type="checkbox"> 동의합니다</label>
+                    </div>
+                    <div class="terms">
+                        <h4>개인정보취급방침안내</h4>
+                        <div class="content">
+                            개인정보취급방침을입력해주세요 
+                        </div>
+                        <label><input type="checkbox"> 동의합니다</label>
+                    </div>
+                    <div class="join-form">
+                        <h4>회원정보 입력</h4>
+                        <div class="form">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>아이디</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="1234@naver.com (이메일 형식)">
+                                            </div>
+                                            <p class="note">사용가능한 아이디 입니다.</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>비밀번호</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control">
+                                            </div>
+                                            <p class="note">비밀번호를 입력해주세요.</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>비밀번호 확인</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control">
+                                            </div>
+                                            <p class="note">비밀번호를 확인해 주세요.</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>이름</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <p class="note">이름을 입력해 주세요.</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>닉네임</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="공백없이 한글, 영문, 숫자만 입력 가능 2글자 이상">
+                                            </div>
+                                            <p class="note">사용가능한 닉네임 입니다.</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="inline">
+                                    <dl>
+                                        <dt>성별</dt>
+                                        <dd>
+                                            <label><input type="radio"> 남성</label>
+                                            <label><input type="radio"> 여성</label>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="inline profile">
+                                    <dl>
+                                        <dt>프로필 사진</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <input type="file" class="form-control">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <p class="attention">가로길이 80px에 최적화 되어있습니다. gif, jpg, png 파일 업로드가 가능합니다.</p>
+                                </li>
+                                <li class="inline">
+                                    <dl>
+                                        <dt>중복선택</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <label><input type="checkbox"> 1월</label>
+                                                </li>
+                                                <li>
+                                                    <label><input type="checkbox"> 2월</label>
+                                                </li>
+                                                <li>
+                                                    <label><input type="checkbox"> 3월</label>
+                                                </li>
+                                                <li>
+                                                    <label><input type="checkbox"> 4월</label>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>전화번호</dt>
+                                        <dd>
+                                            <div class="form-group type-2">
+                                                <select class="form-control">
+                                                    <option>010</option>
+                                                </select>
+                                                <span>-</span>
+                                                <input type="text" class="form-control"><span>-</span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>내용</dt>
+                                        <dd>
+                                            <div class="form-group">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <a href="#" class="btn btn-cancel">취소</a>
+                        <button type="submit" class="btn btn-submit">회원가입</button>
+                    </div>
+                </div>
+            </article>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            (function($){
+                // popup 닫기
+                $(document).on('click', '.btn-close', function(){
+                    $('.board-pop').hide();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

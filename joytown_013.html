@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <title>joytown</title>
+    </head>
+    <body>
+        
+        <main id="content" class="board">
+            <div class="container-fluid">
+                <section class="board-pop board-view">
+                    <div class="container">
+                        <div class="section-header">
+                            <h3>게시판</h3>
+                            <button type="button" class="btn-close">
+                                <img src="./assets/images/ico_close.png" alt="">
+                            </button>
+                        </div>
+                        <div class="section-content">
+                            <article class="view-content">
+                                <div class="article-header">
+                                    <div class="info">
+                                        <span class="num">번호 123</span>
+                                        <span class="file">
+                                            <a href="#"><img src="./assets/images/ico_file.png" alt=""></a>
+                                            <a href="#"><img src="./assets/images/ico_file.png" alt=""></a>
+                                        </span>
+                                        <ul>
+                                            <li><i class="like">♥</i> 좋아요 123</li>
+                                            <li>조회수 123</li>
+                                            <li>홍길동 2022-05-30</li>
+                                        </ul>
+                                    </div>
+                                    <h4>안녕하세요. 게시판 제목입니다.</h4>
+                                </div>
+                                <div class="article-content">
+                                    <div class="content">
+                                        <p>
+                                            내용이 일부 보입니다. 게시판 내용내용이 일부 보입니다. 게시판 내용 영역입니다. 내용이 일부<br> 영역입니다. 내용이 일부
+                                        </p>
+                                    </div>
+                                    <div class="btn-controls">
+                                        <div>
+                                            <a href="#" class="btn btn-menu"></a>
+                                            <p>
+                                                <a href="#" class="btn btn-prev"></a>
+                                                <a href="#" class="btn btn-next"></a>
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn btn-cancel">삭제</a>
+                                        <a href="#" class="btn btn-modify">수정</a>
+                                    </div>
+                                </div>
+                                <div class="reply">
+                                    <p class="comment">댓글 103,000 개</p>
+                                    <div class="form-group">
+                                        <textarea class="form-control"></textarea>
+                                        <button type="button" class="btn-reply">댓글저장</button>
+                                    </div>
+                                    <ul class="reply-list">
+                                        <li>
+                                            <div class="reply-content">
+                                                <div class="info">
+                                                    <ul>
+                                                        <li>abc***</li>
+                                                        <li>2022-05-30</li>
+                                                        <li>10:11:11</li>
+                                                    </ul>
+                                                </div>
+                                                <p>
+                                                    내용이 일부 보입니다. 게시판 내용내용이 일부 보입니다.<br> 게시판 내용 영역입니다. 내용이 일부 영역입니다. 내용이 일부
+                                                </p>
+                                                <button type="button" class="btn-delete"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="reply-content">
+                                                <div class="info">
+                                                    <ul>
+                                                        <li>abc***</li>
+                                                        <li>2022-05-30</li>
+                                                        <li>10:11:11</li>
+                                                    </ul>
+                                                </div>
+                                                <p>
+                                                    내용이 일부 보입니다. 게시판 내용내용이 일부 보입니다. 게시판 내용 영역입니다. 내용이 일부 영역입니다. 내용이 일부
+                                                </p>
+                                                <button type="button" class="btn-delete"></button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            (function($){
+                // popup 닫기
+                $(document).on('click', '.btn-close', function(){
+                    $('.board-pop').hide();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

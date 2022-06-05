@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/default.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <title>joytown</title>
+    </head>
+    <body>
+        
+        <main id="content" class="board">
+            <div class="container-fluid">
+                <section class="board-pop character-setting">
+                    <div class="container">
+                        <div class="section-header">
+                            <h3>캐릭터 설정</h3>
+                            <button type="button" class="btn-close">
+                                <img src="./assets/images/ico_close.png" alt="">
+                            </button>
+                        </div>
+                        <div class="section-content">
+                            <div class="swiper character-type">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character01.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character02.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character03.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character04.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character05.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character06.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character01.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character02.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character03.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character04.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character05.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:;">
+                                            <figure>
+                                                <img src="./assets/images/img_character06.png" alt="">
+                                            </figure>
+                                            <p class="circle"></p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            (function($){
+                // popup 닫기
+                $(document).on('click', '.btn-close', function(){
+                    $('.board-pop').hide();
+                });
+                var swiper = new Swiper(".character-type", {
+                    slidesPerView: 3,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "progressbar",
+                    },
+                    breakpoints: {
+                        1024: {
+                            slidesPerView: 6,
+                        },
+                    },
+                });
+                
+                // 캐릭서 설정 관련
+                $(document).on('click', '.character-type .swiper-slide > a', function(){
+                    $('.swiper-slide').removeClass('active');
+                    $(this).parent().addClass('active');
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
