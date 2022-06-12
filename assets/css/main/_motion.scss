@@ -1,0 +1,59 @@
+[data-motion*="wiggle-up"] {
+  position: relative;
+  animation: wiggle-up ease-in-out 2.5s infinite;
+	opacity: 0;
+
+  &[data-motion-delay*="300ms"] {
+    animation-delay: .3s;
+  }
+  &[data-motion-delay*="600ms"] {
+    animation-delay: .6s;
+  }
+  &[data-motion-delay*="900ms"] {
+    animation-delay: .9s;
+  }
+}
+
+
+
+@keyframes pause {
+
+  0%,
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle-up {
+  0% {
+		transform: scale(0.5) rotate(10deg);
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  10%,
+  60% {
+    opacity: 1;
+  }
+
+  10%,
+  40% {
+    left: -0.3rem;
+    transform: rotate(-10deg);
+  }
+
+  25%,
+  55% {
+    left: 0.3rem;
+    transform: rotate(10deg);
+  }
+
+  70%, 100% {
+    left: 0;
+    top: -6rem;
+    opacity: 0;
+    transform: rotate(-10deg);
+  }
+}

@@ -1,0 +1,74 @@
+@mixin typo-size-100($important: null) {
+	font-size: 6rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+}
+
+@mixin typo-size-200($important: null) {
+	font-size: 5.2rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 700 $important;
+}
+
+@mixin typo-size-250($important: null) {
+	font-size: 4.8rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 500 $important;
+}
+
+@mixin typo-size-300($important: null) {
+	font-size: 4.4rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+}
+
+@mixin typo-size-350($important: null) {
+	font-size: 4rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 700 $important;
+}
+
+@mixin typo-size-400($important: null) {
+	font-size: 3.2rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 700 $important;
+}
+
+@mixin typo-color-black($important: null) {
+	color: #111 $important;
+}
+
+
+.typo-size-100 {
+	@include typo-size-100(!important);
+}
+
+.typo-size-200 {
+	@include typo-size-200(!important);
+}
+
+.typo-size-250 {
+	@include typo-size-250(!important);
+}
+
+.typo-size-300 {
+	@include typo-size-300(!important);
+}
+
+.typo-size-350 {
+	@include typo-size-350(!important);
+}
+
+.typo-size-300 {
+	@include typo-size-300(!important);
+}
+
+.typo-color-black {
+	@include typo-color-black(!important);
+}
+
+

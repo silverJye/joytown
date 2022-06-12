@@ -1,3 +1,284 @@
+html {
+	font-size: 10px;
+  -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust : none;  /* IE */
+  -moz-text-size-adjust : none;  /* 파이어폭스 */
+  -o-text-size-adjust : none;  /* 오페라 구버전 */
+}
+body {
+	@include typo-color-black;
+	font-size: 1.4rem;
+	font-family: $font-face-noto;
+	line-height: 1.4;
+	letter-spacing: -0.025em;
+  -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust : none;  /* IE */
+  -moz-text-size-adjust : none;  /* 파이어폭스 */
+  -o-text-size-adjust : none;  /* 오페라 구버전 */
+}
+
+/* common */
+.tar {
+	text-align: right !important;
+}
+.tac {
+	text-align: center !important;
+}
+.tal {
+	text-align: left !important;
+}
+.fw-bold {
+	font-weight: 700 !important;
+}
+.fw-medium {
+	font-weight: 500 !important;
+}
+.fw-regular {
+	font-weight: 400 !important;
+}
+
+
+
+
+
+
+/* in main page */
 .container-main {
 	
 }
+
+.section-area {
+	width: 100%;
+
+}
+.section-inner {
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 12rem 0;
+}
+
+.section-tit {
+	@include typo-size-300;
+	@include typo-color-black;
+	text-align: center;
+}
+
+// 상단 비주얼
+.main-visual {
+	background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%);
+
+	.section-tit {
+		@include typo-size-100;
+		text-align: left;
+		color: #fff;
+	}
+}
+
+// 지구본
+.main-service {
+	.section-tit {
+		@include typo-size-200;
+	}
+}
+.service-intro {
+
+	.service-intro__earth {
+		position: relative;
+		width: 82rem;
+		height: 82rem;
+		margin: 0 auto;
+		background: radial-gradient(#b778fd, #ab94fe);
+		border-radius: 50%;
+	}
+	.service-intro__item {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 16rem;
+		height: 100%;
+		margin: 0 auto;
+		border: 1px solid red;
+
+		/* SCSS */
+		@for $i from 1 to 13{
+			&:nth-child(#{$i}){
+				$i: $i - 1;
+				transform: rotate(30deg * $i);
+			}
+		}
+		[data-motion] {
+			display: none;
+		}
+		&.service-intro__item--active {
+			[data-motion] {
+				display: block;
+			}
+		}
+	}
+	.service-intro__item-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}
+.character-stage {
+	display: block;
+	width: 14rem;
+	height: 15rem;
+	background: url('/assets/images/main/character-stage.png') center bottom/14rem auto no-repeat;
+}
+
+// 장점
+.main-point {
+	background: #f7afaf;
+
+	.section-inner {
+		position: relative;
+
+		> .bg-icon {
+			position: absolute;
+
+			&.ps-left {
+				top: 50%;
+				left: 0;
+			}
+			&.ps-right {
+				right: 0;
+				top: 40%;
+
+				&.n2 {
+					right: 3rem;
+					top: 60%;
+				}
+			}
+			&.ps-bottom {
+				bottom: -3rem;
+				left: 40%;
+			}
+		}
+	}
+}
+.point-list {
+	display: flex;
+	max-width: 120rem;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: stretch;
+
+	.point-list__column {
+		flex: 1 1 25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: stretch;
+		padding: 0 2.4rem;
+	}
+	.point-list__row {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: stretch;
+
+		&.point-list__row--divide {
+			border-top: 0.1rem solid #fff;
+			border-bottom: 0.1rem solid #fff;
+
+			.point-list__box {
+				margin-top: 0;
+			}
+		}
+	}
+	.point-list__box {
+		position: relative;
+		display: block;
+		border-radius: 3rem;
+		height: 28.4rem;
+		text-align: center;
+		font-size: 3.2rem;
+		font-weight: 700;
+		color: #4d4098;
+		padding: 5rem 1rem;
+		background: #fff;
+		margin: 2rem 0;
+
+		&.point-list__box--yellow {
+			background: #ffe1a8;
+		}
+		&.point-list__box--blue {
+			background: #b4a1ff;
+
+			.point-list__tit {
+				color: #fff;
+			}
+		}
+	}
+	.point-list__tit {
+		display: block;
+		margin-bottom: 2rem;
+		line-height: 1.2;
+	}
+	.point-list__visual {
+		img {
+			width: 10rem;
+		}
+	}
+	.point-list__desc {
+		color: #fff;
+		font-size: 1.6rem;
+	}
+	.point-list__arrow {
+		position: absolute;
+		width: 3rem;
+		height: 5.6rem;
+		background: url('/assets/images/main/icon-pointer.svg') center/contain no-repeat;
+
+		&.point-list__arrow--top {
+			top: 5rem;
+			left: 100%;
+			margin-left: -1.5rem;
+			transform: rotate(-90deg);
+			transform-origin: left top;
+		}
+
+		&.point-list__arrow--bottom {
+			bottom: -3rem;
+			left: 100%;
+			margin-left: -1.5rem;
+			transform: rotate(-90deg);
+			transform-origin: left top;
+		}
+
+		&.point-list__arrow--right {
+			right: 2rem;
+			top: 100%;
+			margin-top: -1.5rem;
+		}
+	}
+}
+
+// 실시간 성경 말씀
+.main-live {
+	background: #aa95fe;
+	color: #fff;
+}
+
+// 커뮤니케이션 공간
+.main-communicate {
+
+}
+
+// 상담
+.main-contact {
+	background: #ffdced;
+	
+	.section-tit {
+		@include typo-size-250;
+		color: #5928aa;
+	}
+}
+

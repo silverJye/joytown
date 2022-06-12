@@ -7,7 +7,9 @@
 /* table max
 **************************/
 @media screen and (max-width: $max-width-tablet) {
-
+	.section-inner {
+		padding: 6rem 0;
+	}
 }
 
 /* phone max

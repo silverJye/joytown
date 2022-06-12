@@ -1,0 +1,49 @@
+@mixin icon($size: null) {
+	display: inline-block;
+	width: $size;
+	height: $size;
+	vertical-align: middle;
+	background: {
+		size: contain;
+		repeat: no-repeat;
+		position: center;
+	}
+}
+
+.icon28 {
+	@include icon(2.8rem);
+}
+
+.icon32 {
+	@include icon(3.2rem);
+}
+
+.icon42 {
+	@include icon(4.2rem);
+}
+
+.icon54 {
+	@include icon(5.4rem);
+}
+
+.icon62 {
+	@include icon(6.2rem);
+}
+
+
+
+.icon-emoji-heart {
+	background-image: url('/assets/images/main/icon-emoji-heart.svg');
+}
+.icon-heart-pink {
+	background-image: url('/assets/images/main/icon-heart-pink.svg');
+}
+.icon-heart-purple {
+	background-image: url('/assets/images/main/icon-heart-purple.svg');
+}
+.icon-thumbsup-pink {
+	background-image: url('/assets/images/main/icon-thumbsup-pink.svg');
+}
+.icon-emoji-smile {
+	background-image: url('/assets/images/main/icon-emoji-smile.svg');
+}
