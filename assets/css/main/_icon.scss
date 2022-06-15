@@ -18,6 +18,10 @@
 	@include icon(3.2rem);
 }
 
+.icon38 {
+	@include icon(3.8rem);
+}
+
 .icon42 {
 	@include icon(4.2rem);
 }
@@ -46,4 +50,7 @@
 }
 .icon-emoji-smile {
 	background-image: url('/assets/images/main/icon-emoji-smile.svg');
+}
+.icon-arrow-right-pink {
+	background-image: url('/assets/images/main/icon-arrow-right-pink.svg');
 }

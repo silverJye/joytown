@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="./assets/css/main.css">
         <script src="/assets/js/lib/jquery-3.6.0.min.js"></script>
         <script src="/assets/js/lib/swiper-bundle.min.js"></script>
+        <script src="/assets/js/main.js"></script>
         <title>joytown</title>
     </head>
     <body>
         <main id="content" class="container-main">
             <section class="section-area main-visual">
                 <div class="section-inner">
-                    <div class="main-visual__tit-area">
+                    <div class="tit-area">
                         <h2 class="section-tit">
                             <strong>이제,<br>우리는</strong><br>
                             <span class="fw-regular">JoyTown</span>
@@ -59,7 +60,7 @@
             </section>
             <section class="section-area main-service">
                 <div class="section-inner">
-                    <div class="main-service__tit-area">
+                    <div class="tit-area">
                         <h2 class="section-tit">
                             매일매일 <i class="icon54 icon-emoji-heart"></i>JoyTown에서는<br>
                             가능해요
@@ -394,7 +395,7 @@
             </section>
             <section class="section-area main-live">
                 <div class="section-inner">
-                    <div class="main-live__tit-area">
+                    <div class="tit-area">
                         <h2 class="section-tit">
                             실시간 LIVE 성경 말씀
                         </h2>
@@ -402,43 +403,126 @@
                     </div>
 
 
-
-
+                    <div class="live-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="live-slider__item swiper-slide">
+                                <div class="live-slider__item-inner">
+                                    <div class="live-slider__visual">
+                                        <div class="iframe-wrapper">
+                                            <iframe src="https://www.youtube.com/embed/7NpSVMIcsgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="live-slider__cont">
+                                        <strong class="live-slider__tit">라이브 스트리밍</strong>
+                                        <span class="live-slider__desc">새로운 커뮤니케이션 공간을 경험하세요!</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="live-slider__item swiper-slide">
+                                <div class="live-slider__item-inner">
+                                    <div class="live-slider__visual">
+                                        <a href="#">
+                                            <img src="/assets/images/main/@live-visual1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="live-slider__cont">
+                                        <strong class="live-slider__tit">타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 </strong>
+                                        <span class="live-slider__desc">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="live-slider__item swiper-slide">
+                                <div class="live-slider__item-inner">
+                                    <div class="live-slider__visual">
+                                        <a href="#">
+                                            <img src="/assets/images/main/@live-visual2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="live-slider__cont">
+                                        <strong class="live-slider__tit">타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 </strong>
+                                        <span class="live-slider__desc">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="live-slider__item swiper-slide">
+                                <div class="live-slider__item-inner">
+                                    <div class="live-slider__visual">
+                                        <a href="#">
+                                            <img src="/assets/images/main/@live-visual3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="live-slider__cont">
+                                        <strong class="live-slider__tit">타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 </strong>
+                                        <span class="live-slider__desc">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="live-slider__item swiper-slide">
+                                <div class="live-slider__item-inner">
+                                    <div class="live-slider__visual">
+                                        <a href="#">
+                                            <img src="/assets/images/main/@live-visual4.png" alt="">
+                                        </a>
+                                    </div>
+                                    <a href="#" class="live-slider__cont">
+                                        <strong class="live-slider__tit">타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 타이틀 </strong>
+                                        <span class="live-slider__desc">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev live-slider-nextprev"></div>
+                    <div class="swiper-button-next live-slider-nextprev"></div>
 
                 </div>
             </section>
             <section class="section-area main-communicate">
                 <div class="section-inner">
-                    <div class="main-communicate__tit-area">
+                    <div class="tit-area">
                         <h2 class="section-tit">
-                            새로운 커뮤니케이션 공간을 <br>경험하세요!
+                            새로운 <strong class="fw-bold">커뮤니케이션 공간</strong>을 <br>경험하세요!
                         </h2>
-                        <div class="section-desc">JOYTOWN</div>
                     </div>
 
                     <ul class="communicate-tab">
                         <div class="communicate-tab__item communicate-tab__item--active">
                             <button class="communicate-tab__btn">
+                                <div class="communicate-tab__thumb">
+                                    <img src="/assets/images/main/@communicate-thumb1.png" alt="">
+                                </div>
                                 <span>가상예배당</span>
                             </button>
                         </div>
                         <div class="communicate-tab__item">
                             <button class="communicate-tab__btn">
+                                <div class="communicate-tab__thumb">
+                                    <img src="/assets/images/main/@communicate-thumb1.png" alt="">
+                                </div>
                                 <span>VOD</span>
                             </button>
                         </div>
                         <div class="communicate-tab__item">
                             <button class="communicate-tab__btn">
+                                <div class="communicate-tab__thumb">
+                                    <img src="/assets/images/main/@communicate-thumb2.png" alt="">
+                                </div>
                                 <span>라이브 스트리밍</span>
                             </button>
                         </div>
                         <div class="communicate-tab__item">
                             <button class="communicate-tab__btn">
+                                <div class="communicate-tab__thumb">
+                                    <img src="/assets/images/main/@communicate-thumb3.png" alt="">
+                                </div>
                                 <span>컨퍼런스 행사</span>
                             </button>
                         </div>
                         <div class="communicate-tab__item">
                             <button class="communicate-tab__btn">
+                                <div class="communicate-tab__thumb">
+                                    <img src="/assets/images/main/@communicate-thumb4.png" alt="">
+                                </div>
                                 <span>학습/강의</span>
                             </button>
                         </div>
@@ -447,7 +531,7 @@
                     <div class="communicate-intro">
                         <div class="communicate-intro__section communicate-intro__section--active">
                             <div class="communicate-intro__link-area">
-                                <a href="#" class="communicate-link" style="background-image:url('');">
+                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
                                     <div class="communicate-link__cont">
                                         <div class="communicate-link__num">
                                             <span>01</span>
@@ -467,31 +551,231 @@
                                         대형 모니터를 통해 라이브 예배를 보실 수 있습니다.<br>목사님 설교 말씀과 함께 아멘 음성을 노출할 수 있어요!<br>설교에 응답을 할 수 있으며 함께 커뮤니케이션 할 수 있어요! 
                                     </p>
                                 </div>
-
                                 <div class="communicate-thumbs">
                                     <div class="communicate-thumbs__slide swiper">
                                         <div class="swiper-wrapper">
                                             <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="" alt="">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
                                             </div>
                                             <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="" alt="">
+                                                <img src="/assets/images/main/@communicate-thumb-medium2.png" alt="">
                                             </div>
                                             <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="" alt="">
+                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
                                             </div>
                                             <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="" alt="">
+                                                <img src="/assets/images/main/@communicate-thumb-medium4.png" alt="">
                                             </div>
                                             <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="" alt="">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-button-prev communicate-slider-nextprev"></div>
+                                    <div class="swiper-button-next communicate-slider-nextprev"></div>
                                 </div>
-
                                 <div class="communicate-intro__cont-footer">
-                                    <span>예배당 공간입니다.</span>
+                                    <span>예배당 공간입니다</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="communicate-intro__section">
+                            <div class="communicate-intro__link-area">
+                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                    <div class="communicate-link__cont">
+                                        <div class="communicate-link__num">
+                                            <span>02</span>
+                                        </div>
+                                        <strong class="communicate-link__tit">VOD</strong>
+                                        <span class="communicate-link__added">
+                                            <i class="icon38 icon-arrow-right-pink"></i>
+                                            바로가기
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="communicate-intro__cont">
+                                <strong class="communicate-intro__cont-tit">JOYTOWN</strong>
+                                <div class="communicate-intro__cont-desc">
+                                    <p>
+                                        설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 
+                                    </p>
+                                </div>
+                                <div class="communicate-thumbs">
+                                    <div class="communicate-thumbs__slide swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium2.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium4.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev communicate-slider-nextprev"></div>
+                                    <div class="swiper-button-next communicate-slider-nextprev"></div>
+                                </div>
+                                <div class="communicate-intro__cont-footer">
+                                    <span>VOD 공간입니다</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="communicate-intro__section">
+                            <div class="communicate-intro__link-area">
+                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                    <div class="communicate-link__cont">
+                                        <div class="communicate-link__num">
+                                            <span>03</span>
+                                        </div>
+                                        <strong class="communicate-link__tit">라이브 <br class="only-pc">스트리밍</strong>
+                                        <span class="communicate-link__added">
+                                            <i class="icon38 icon-arrow-right-pink"></i>
+                                            바로가기
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="communicate-intro__cont">
+                                <strong class="communicate-intro__cont-tit">JOYTOWN</strong>
+                                <div class="communicate-intro__cont-desc">
+                                    <p>
+                                        설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 
+                                    </p>
+                                </div>
+                                <div class="communicate-thumbs">
+                                    <div class="communicate-thumbs__slide swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium2.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium4.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev communicate-slider-nextprev"></div>
+                                    <div class="swiper-button-next communicate-slider-nextprev"></div>
+                                </div>
+                                <div class="communicate-intro__cont-footer">
+                                    <span>라이브 스트리밍 공간입니다</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="communicate-intro__section">
+                            <div class="communicate-intro__link-area">
+                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                    <div class="communicate-link__cont">
+                                        <div class="communicate-link__num">
+                                            <span>04</span>
+                                        </div>
+                                        <strong class="communicate-link__tit">컨퍼런스 <br class="only-pc">행사</strong>
+                                        <span class="communicate-link__added">
+                                            <i class="icon38 icon-arrow-right-pink"></i>
+                                            바로가기
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="communicate-intro__cont">
+                                <strong class="communicate-intro__cont-tit">JOYTOWN</strong>
+                                <div class="communicate-intro__cont-desc">
+                                    <p>
+                                        설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 
+                                    </p>
+                                </div>
+                                <div class="communicate-thumbs">
+                                    <div class="communicate-thumbs__slide swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium2.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium4.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev communicate-slider-nextprev"></div>
+                                    <div class="swiper-button-next communicate-slider-nextprev"></div>
+                                </div>
+                                <div class="communicate-intro__cont-footer">
+                                    <span>컨퍼런스 행사 공간입니다</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="communicate-intro__section">
+                            <div class="communicate-intro__link-area">
+                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                    <div class="communicate-link__cont">
+                                        <div class="communicate-link__num">
+                                            <span>05</span>
+                                        </div>
+                                        <strong class="communicate-link__tit">학습/<br class="only-pc">강의</strong>
+                                        <span class="communicate-link__added">
+                                            <i class="icon38 icon-arrow-right-pink"></i>
+                                            바로가기
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="communicate-intro__cont">
+                                <strong class="communicate-intro__cont-tit">JOYTOWN</strong>
+                                <div class="communicate-intro__cont-desc">
+                                    <p>
+                                        설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 
+                                    </p>
+                                </div>
+                                <div class="communicate-thumbs">
+                                    <div class="communicate-thumbs__slide swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium2.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium4.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev communicate-slider-nextprev"></div>
+                                    <div class="swiper-button-next communicate-slider-nextprev"></div>
+                                </div>
+                                <div class="communicate-intro__cont-footer">
+                                    <span>학습/강의 공간입니다</span>
                                 </div>
                             </div>
                         </div>
@@ -503,15 +787,14 @@
 
             <section class="section-area main-contact">
                 <div class="section-inner">
-                    <div class="main-contact__tit-area">
+                    <div class="tit-area">
                         <h2 class="section-tit">
                             지금! 바로 상담하세요
                         </h2>
                     </div>
 
                     <div class="contact-area">
-
-                        <div class="contact-card">
+                        <div class="contact-card" data-component="inview">
                             <div class="contact-card__cover"></div>
                             <div class="contact-card__cont">
                                 <div class="contact-card__tit">
@@ -533,16 +816,17 @@
                                     <div class="agree-area">
                                         <div class="agree-area__header">
                                             <div class="form-item">
-                                                <label for="" class="chk-item">
+                                                <label class="chk-item">
                                                     <input type="checkbox">
+                                                    <i class="icon"></i>
                                                     <span>
                                                         (필수) 개인정보 수집, 이용 동의
                                                     </span>
                                                 </label>
                                             </div>
-                                            <button type="button" class="agree-area__btn"></button>
+                                            <button type="button" class="agree-area__btn" onclick="$('.agree-area__body').slideToggle(200);"></button>
                                         </div>
-                                        <div class="agree-area__body">
+                                        <div class="agree-area__body" style="display: none;">
                                             <div class="agree-area__body-inner">
                                                 약관 약관 약관 약관 약관 약관약관 약관 약관 약관 약관 약관약관 약관 약관 약관 약관 약관약관 약관 약관 약관 약관 약관약관 약관 약관 약관 약관 약관
                                             </div>
@@ -553,7 +837,23 @@
                                     <button type="submit" class="btn-point">문의하기</button>
                                 </div>
                             </div>
+                            <i class="contact-icon-snack contact-icon n1" data-motion="dongdong" data-motion-delay="">
+                                <img src="/assets/images/main/contact-icon-snack.svg" alt="">
+                            </i>
+                            <i class="contact-icon-snack contact-icon n2" data-motion="dongdong" data-motion-delay="-600ms">
+                                <img src="/assets/images/main/contact-icon-snack.svg" alt="">
+                            </i>
                         </div>
+
+                        <i class="contact-icon-chat contact-icon n1" data-motion="dongdong" data-motion-delay="-600ms">
+                            <img src="/assets/images/main/contact-icon-chat1.png" alt="">
+                        </i>
+                        <i class="contact-icon-chat contact-icon n2" data-motion="dongdong" data-motion-delay="">
+                            <img src="/assets/images/main/contact-icon-chat2.png" alt="">
+                        </i>
+                        <i class="contact-icon-chat contact-icon n3" data-motion="dongdong" data-motion-delay="-300ms">
+                            <img src="/assets/images/main/contact-icon-chat3.png" alt="">
+                        </i>
                     </div>
                 </div>
             </section>
@@ -564,8 +864,83 @@
         
         <script>
             ;(function(window, document, $, undefined){
-                document.addEventListener('DOMContentLoaded', function(){
+                $(document).ready(() => {
 
+
+                    $('.communicate-tab__item button').on('click', function(){
+                        var $this = $(this);
+                        var $btnAreas = $('.communicate-tab__item');
+                        var $btnArea = $this.closest('.communicate-tab__item');
+                        
+                        $('.communicate-tab__item--active').removeClass('communicate-tab__item--active');
+                        $btnArea.addClass('communicate-tab__item--active');
+
+                        var $sections = $('.communicate-intro__section');
+                        $('.communicate-intro__section--active').removeClass('communicate-intro__section--active');
+
+                        console.log($sections.eq($btnArea.index($btnArea)))
+                        $sections.eq($btnAreas.index($btnArea)).addClass('communicate-intro__section--active')
+                    })
+
+                    function inView(){
+                        const elInView = document.querySelectorAll('[data-component="inview"]');
+                        elInView.forEach((_elInView) => {
+                            _elInView.addEventListener('screenOn', () => {
+                                _elInView.classList.add('screenon');
+                            })
+                            _elInView.addEventListener('screenOut', () => {
+                                _elInView.classList.remove('screenon');
+                            })
+
+                            window.aaa = new Joytown.InView({
+                                target: _elInView,
+                                margin: {
+                                    top: '20%',
+                                    bottom: '20%'
+                                }
+                            })
+                        })
+                    }
+                    inView();
+
+
+                    const swiper = new Swiper('.live-slider', {
+                        slidesPerView: 5,
+                        centeredSlides: true,
+                        speed: 400,
+                        spaceBetween: 6,
+                        loop: true,
+                        navigation: {
+                            nextEl: '.main-live .swiper-button-next',
+                            prevEl: '.main-live .swiper-button-prev',
+                        },
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false
+                        },
+                        breakpoints: {
+                            1200: {
+                            // slidesPerView: 5,  //브라우저가 768보다 클 때
+                            }
+                        },
+                    });
+
+                    const swiperCommunicateThumb = new Swiper('.communicate-thumbs__slide', {
+                        slidesPerView: 3,
+                        centeredSlides: false,
+                        speed: 400,
+                        spaceBetween: 8,
+                        loop: false,
+                        navigation: {
+                            nextEl: '.communicate-thumbs .swiper-button-next',
+                            prevEl: '.communicate-thumbs .swiper-button-prev',
+                        },
+                        breakpoints: {
+                            1200: {
+                                slidesPerView: 4,  //브라우저가 768보다 클 때
+                            }
+                        },
+                    });
                 })
 
             })(window, document, jQuery);

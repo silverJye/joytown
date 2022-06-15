@@ -2,18 +2,39 @@
   position: relative;
   animation: wiggle-up ease-in-out 2.5s infinite;
 	opacity: 0;
-
-  &[data-motion-delay*="300ms"] {
-    animation-delay: .3s;
-  }
-  &[data-motion-delay*="600ms"] {
-    animation-delay: .6s;
-  }
-  &[data-motion-delay*="900ms"] {
-    animation-delay: .9s;
-  }
 }
 
+
+[data-motion*="dongdong"] {
+  animation: dongdong ease-in-out 2.5s infinite;
+}
+[data-motion-delay*="-300ms"] {
+  animation-delay: -0.3s;
+}
+[data-motion-delay*="-600ms"] {
+  animation-delay: -0.6s;
+}
+[data-motion-delay*="-900ms"] {
+  animation-delay: -0.9s;
+}
+[data-motion-delay*="300ms"] {
+  animation-delay: .3s;
+}
+[data-motion-delay*="600ms"] {
+  animation-delay: .6s;
+}
+[data-motion-delay*="900ms"] {
+  animation-delay: .9s;
+}
+
+@keyframes dongdong {
+  0%, 100% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(0.5rem);
+  }
+}
 
 
 @keyframes pause {

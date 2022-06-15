@@ -37,9 +37,53 @@
 	line-height: 1.2 $important;
 	font-weight: 700 $important;
 }
+@mixin typo-size-450($important: null) {
+	font-size: 2.8rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 500 $important;
+}
+@mixin typo-size-500($important: null) {
+	font-size: 2rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 500 $important;
+}
+@mixin typo-size-550($important: null) {
+	font-size: 1.6rem $important;
+	letter-spacing: -0.025em $important;
+	line-height: 1.2 $important;
+	font-weight: 500 $important;
+}
 
 @mixin typo-color-black($important: null) {
 	color: #111 $important;
+}
+
+@mixin textEllipse {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@mixin textEllipseMulti($max-line: 2) {
+	display: -webkit-box;
+	overflow: hidden;
+	line-height: 1.4;
+	max-height: 1.4em * #{$max-line};
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: $max-line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin clearfix {
+	&:after {
+		display: block;
+		clear:both;
+		content: "";
+	}
 }
 
 
