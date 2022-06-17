@@ -86,6 +86,10 @@
 	}
 }
 
+@mixin btn-transition {
+	transition: background ease-in-out .2s;
+}
+
 
 .typo-size-100 {
 	@include typo-size-100(!important);

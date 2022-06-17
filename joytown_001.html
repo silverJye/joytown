@@ -12,6 +12,33 @@
         <title>joytown</title>
     </head>
     <body>
+        <header id="header" class="header-area">
+            <div class="header-area__fixed">
+                <div class="header-area__grid">
+                    <h1>
+                        <a href="/joytown_001.html">
+                            <img src="/assets/images/main/logo-joytown.svg" alt="joytown" width="300">
+                        </a>
+                    </h1>
+                    <div class="header-area__util">
+
+                        <a href="#" class="btn-icon">
+                            <i class="icon28 icon-unlock"></i>
+                        </a>
+                        <a href="#" class="btn-icon">
+                            <i class="icon28 icon-lock"></i>
+                        </a>
+                        <a href="#" class="btn-icon">
+                            <i class="icon28 icon-mypage"></i>
+                        </a>
+
+                        <a href="#" class="btn-icon btn-icon--joytown">
+                            <img src="/assets/images/main/logo-joytown-m.svg" alt="joytown" width="35">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main id="content" class="container-main">
             <section class="section-area main-visual">
                 <div class="section-inner">
@@ -67,9 +94,9 @@
                         </h2>
                         <div class="tab-area">
                             <div class="tab-area__inner">
-                                <button type="button" class="btn-line">성경공부</button>
+                                <button type="button" class="btn-line btn-line--active">성경공부</button>
                                 <button type="button" class="btn-line">예배당</button>
-                                <button type="button" class="btn-line btn-line--active">어린이성경학교</button>
+                                <button type="button" class="btn-line">어린이성경학교</button>
                                 <button type="button" class="btn-line">부흥회</button>
                                 <button type="button" class="btn-line">연합예배</button>
                                 <button type="button" class="btn-line">성경게임</button>
@@ -84,17 +111,17 @@
                     </div>
 
                     <div class="service-intro">
-                        <div class="service-intro__earth">
-                            <button type="button" class="service-intro__item">
+                        <div class="service-intro__earth step1">
+                            <button type="button" class="service-intro__item service-intro__item--active">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--study"></span>
-                                        <span class="character-stage__background character-stage__background--study"> <!-- 별까지 합해서 무대 자르기 -->
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n1">
+                                        <span class="character-stage__background character-stage__background--study"> <!-- 별까지 합해서 무대 자르기 --> </span>
+                                        <span class="avatar-item avatar-item--study"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>성경공부</strong>
@@ -102,31 +129,29 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--chapel"></span>
-                                        <span class="character-stage__background character-stage__background--chapel">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n2">
+                                        <span class="character-stage__background character-stage__background--chapel"></span>
+                                        <span class="avatar-item avatar-item--chapel"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>예배당</strong>
                                 </span>
                             </button>
-                            <button type="button" class="service-intro__item service-intro__item--active">
+                            <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--children"></span>
-                                        <span class="character-stage__background character-stage__background--children">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                                <i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i>
-                                            </span>
+                                    <span class="character-stage n3">
+                                        <span class="character-stage__background character-stage__background--children"></span>
+                                        <span class="avatar-item avatar-item--children"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>어린이성경학교</strong>
@@ -134,14 +159,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--revival"></span>
-                                        <span class="character-stage__background character-stage__background--revival">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n4">
+                                        <span class="character-stage__background character-stage__background--revival"></span>
+                                        <span class="avatar-item avatar-item--revival"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>부흥회</strong>
@@ -149,14 +174,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--worship"></span>
-                                        <span class="character-stage__background character-stage__background--worship">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n5">
+                                        <span class="character-stage__background character-stage__background--worship"></span>
+                                        <span class="avatar-item avatar-item--worship"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>연합예배</strong>
@@ -164,14 +189,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--game"></span>
-                                        <span class="character-stage__background character-stage__background--game">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n6">
+                                        <span class="character-stage__background character-stage__background--game"></span>
+                                        <span class="avatar-item avatar-item--game"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>성경게임</strong>
@@ -179,14 +204,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--market"></span>
-                                        <span class="character-stage__background character-stage__background--market">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n7">
+                                        <span class="character-stage__background character-stage__background--market"></span>
+                                        <span class="avatar-item avatar-item--market"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>달란트시장</strong>
@@ -194,14 +219,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--vod"></span>
-                                        <span class="character-stage__background character-stage__background--vod">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n8">
+                                        <span class="character-stage__background character-stage__background--vod"></span>
+                                        <span class="avatar-item avatar-item--vod"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>VOD</strong>
@@ -209,14 +234,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--seminar"></span>
-                                        <span class="character-stage__background character-stage__background--seminar">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n9">
+                                        <span class="character-stage__background character-stage__background--seminar"></span>
+                                        <span class="avatar-item avatar-item--seminar"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>세미나</strong>
@@ -224,14 +249,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--studyroom"></span>
-                                        <span class="character-stage__background character-stage__background--studyroom">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n10">
+                                        <span class="character-stage__background character-stage__background--studyroom"></span>
+                                        <span class="avatar-item avatar-item--studyroom"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>스터디룸</strong>
@@ -239,14 +264,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--tree"></span>
-                                        <span class="character-stage__background character-stage__background--tree">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n11">
+                                        <span class="character-stage__background character-stage__background--tree"></span>
+                                        <span class="avatar-item avatar-item--tree"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>성탄트리점등식</strong>
@@ -254,14 +279,14 @@
                             </button>
                             <button type="button" class="service-intro__item">
                                 <span class="service-intro__item-inner">
-                                    <span class="character-stage">
-                                        <span class="avatar-item avater-item--gallery"></span>
-                                        <span class="character-stage__background character-stage__background--gallery">
-                                            <span class="character-stage__background-icon">
-                                                <i class="icon28 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i>
-                                                <i class="icon28 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i>
-                                                <i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i>
-                                            </span>
+                                    <span class="character-stage n12">
+                                        <span class="character-stage__background character-stage__background--gallery"></span>
+                                        <span class="avatar-item avatar-item--gallery"></span>
+                                        <span class="character-stage__background-icon">
+                                            <span class="character-stage__icon"><i class="icon42 icon-heart-pink" data-motion="wiggle-up" data-motion-delay=""></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-emoji-heart" data-motion="wiggle-up" data-motion-delay="300ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon28 icon-heart-purple" data-motion="wiggle-up" data-motion-delay="600ms"></i></span>
+                                            <span class="character-stage__icon"><i class="icon32 icon-thumbsup-pink" data-motion="wiggle-up" data-motion-delay="900ms"></i></span>
                                         </span>
                                     </span>
                                     <strong>갤러리</strong>
@@ -269,10 +294,21 @@
                             </button>
                         </div>
                     </div>
-                    <div class="big-logo-joytown"></div>
+                    
+                    <div class="swiper-button-prev live-slider-nextprev type-earth"></div>
+                    <div class="swiper-button-next live-slider-nextprev type-earth"></div>
+
+
+                    <div class="bg-particle">
+                        <img src="/assets/images/main/bg-particle.svg" alt="">
+                    </div>
                 </div>
             </section>
             <section class="section-area main-point">
+
+                <div class="big-logo-joytown">
+                    <img src="/assets/images/main/logo-joytown-big.png" alt="JOYTOWN" width="521">
+                </div>
                 <div class="section-inner">
                     
                     <div class="point-list">
@@ -531,7 +567,8 @@
                     <div class="communicate-intro">
                         <div class="communicate-intro__section communicate-intro__section--active">
                             <div class="communicate-intro__link-area">
-                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                <a href="#" class="communicate-link">
+                                    <img src="/assets/images/main/@communicate-thumb-big1.png" class="communicate-link__bg">
                                     <div class="communicate-link__cont">
                                         <div class="communicate-link__num">
                                             <span>01</span>
@@ -581,7 +618,8 @@
                         </div>
                         <div class="communicate-intro__section">
                             <div class="communicate-intro__link-area">
-                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                <a href="#" class="communicate-link">
+                                    <img src="/assets/images/main/@communicate-thumb-big1.png" class="communicate-link__bg">
                                     <div class="communicate-link__cont">
                                         <div class="communicate-link__num">
                                             <span>02</span>
@@ -598,26 +636,20 @@
                                 <strong class="communicate-intro__cont-tit">JOYTOWN</strong>
                                 <div class="communicate-intro__cont-desc">
                                     <p>
-                                        설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 
+                                        22설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 설명 설명 설명글입니다. 
                                     </p>
                                 </div>
                                 <div class="communicate-thumbs">
                                     <div class="communicate-thumbs__slide swiper">
                                         <div class="swiper-wrapper">
                                             <div class="communicate-thumbs__item swiper-slide">
+                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
+                                            </div>
+                                            <div class="communicate-thumbs__item swiper-slide">
                                                 <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
                                             </div>
                                             <div class="communicate-thumbs__item swiper-slide">
                                                 <img src="/assets/images/main/@communicate-thumb-medium2.png" alt="">
-                                            </div>
-                                            <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="/assets/images/main/@communicate-thumb-medium3.png" alt="">
-                                            </div>
-                                            <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="/assets/images/main/@communicate-thumb-medium4.png" alt="">
-                                            </div>
-                                            <div class="communicate-thumbs__item swiper-slide">
-                                                <img src="/assets/images/main/@communicate-thumb-medium1.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -631,7 +663,8 @@
                         </div>
                         <div class="communicate-intro__section">
                             <div class="communicate-intro__link-area">
-                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                <a href="#" class="communicate-link">
+                                    <img src="/assets/images/main/@communicate-thumb-big1.png" class="communicate-link__bg">
                                     <div class="communicate-link__cont">
                                         <div class="communicate-link__num">
                                             <span>03</span>
@@ -681,7 +714,8 @@
                         </div>
                         <div class="communicate-intro__section">
                             <div class="communicate-intro__link-area">
-                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                <a href="#" class="communicate-link">
+                                    <img src="/assets/images/main/@communicate-thumb-big1.png" class="communicate-link__bg">
                                     <div class="communicate-link__cont">
                                         <div class="communicate-link__num">
                                             <span>04</span>
@@ -731,7 +765,8 @@
                         </div>
                         <div class="communicate-intro__section">
                             <div class="communicate-intro__link-area">
-                                <a href="#" class="communicate-link" style="background-image:url('/assets/images/main/@communicate-thumb-big1.png');">
+                                <a href="#" class="communicate-link">
+                                    <img src="/assets/images/main/@communicate-thumb-big1.png" class="communicate-link__bg">
                                     <div class="communicate-link__cont">
                                         <div class="communicate-link__num">
                                             <span>05</span>
@@ -857,14 +892,43 @@
                     </div>
                 </div>
             </section>
-
-
-
         </main>
+
+        <footer id="footer" class="footer-area">
+            <div class="footer-area__grid">
+                <div class="footer-area__logo">
+                    <img src="/assets/images/main/logo-joytown-dark.svg" alt="joytown">
+                </div>
+                <div class="footer-area__desc">
+                    <p>
+                        서울특별시 동작구 노량진로 100 (주)지로드코리아  대표자 : 강명준<br>
+                        <span>사업자등록번호 : 108-81-81174</span>
+                        <span>대표전화 : 02-6333-2586</span>
+                        <span>E-mail : leemj@cts.tv</span>
+                        <span>통신판매업신고 : 제2013-서울동작-0620호</span>
+                        <span>부가통신사업신고 : 제2-01-13-0322호</span>
+                        <br><br>
+                        <span class="footer-area__copy">Copyright  (c) ZROADKOREA Corp. all right reserved.</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
         
         <script>
             ;(function(window, document, $, undefined){
                 $(document).ready(() => {
+
+                    $(window).on('scroll', checkIsHeaderSmall);
+                    checkIsHeaderSmall();
+                    function checkIsHeaderSmall(){
+                        var $headerArea = $('.header-area');
+
+                        if ($(window).scrollTop() > 0){
+                            $headerArea.addClass('is-small');
+                            return;
+                        }
+                        $headerArea.removeClass('is-small');
+                    }
 
 
                     $('.communicate-tab__item button').on('click', function(){
@@ -916,7 +980,7 @@
                         },
                         autoplay: {
                             delay: 5000,
-                            disableOnInteraction: false
+                            // disableOnInteraction: false
                         },
                         breakpoints: {
                             1200: {
@@ -924,6 +988,7 @@
                             }
                         },
                     });
+
 
                     const swiperCommunicateThumb = new Swiper('.communicate-thumbs__slide', {
                         slidesPerView: 3,
@@ -941,6 +1006,105 @@
                             }
                         },
                     });
+
+
+
+                    function EarthMove(){
+                        var elMainService = document.querySelector('.main-service');
+                        var _self = this;
+                        
+                        var elTabArea = elMainService.querySelector('.tab-area');
+                        var elTabBtns = elTabArea.querySelectorAll('.btn-line');
+                        var elItems = elMainService.querySelectorAll('.service-intro__item');
+
+                        var elEarthArea = elMainService.querySelector('.service-intro__earth');
+
+                        var elBtnNext = elMainService.querySelector('.swiper-button-next');
+                        var elBtnPrev = elMainService.querySelector('.swiper-button-prev');
+
+                        var btnLength = elTabBtns.length;
+
+                        var currIdx = 0;
+                        var beforeIdx = btnLength - 1;
+
+                        var delay = 4000;
+
+                        var timerMove;
+
+                        function init(){
+                            timerMove = setTimeout(_self.nextStep, delay);
+                            addEvents();
+                        }
+                        function addEvents() {
+                            elBtnNext.addEventListener('click', _self.nextStep);
+                            elBtnPrev.addEventListener('click', _self.prevStep);
+
+                            // elItems.forEach(function(_elItem, _idx) {
+                            //     _elItem.addEventListener('click', function(){
+                            //         _self.goStep(_idx, currIdx);
+                            //         timerMove = setTimeout(_self.nextStep, delay);
+                            //     })
+                            // })
+
+                            elTabBtns.forEach(function(_elItem, _idx) {
+                                _elItem.addEventListener('click', function(){
+                                    _self.goStep(_idx, currIdx);
+                                    timerMove = setTimeout(_self.nextStep, delay);
+                                })
+                            })
+                        }
+                        this.prevStep = function(){
+                            if (currIdx <= 0) {
+                                currIdx = btnLength - 1;
+                                beforeIdx = 0;
+                            } else {
+                                beforeIdx = currIdx;
+                                currIdx--;
+                            }
+                            _self.goStep(currIdx, beforeIdx);
+                            
+                            timerMove = setTimeout(_self.nextStep, delay);
+                        }
+                        this.nextStep = function(){
+                            if (currIdx >= btnLength - 1) {
+                                currIdx = 0;
+                                beforeIdx = btnLength - 1;
+                            } else {
+                                beforeIdx = currIdx;
+                                currIdx++;
+                            }
+                            _self.goStep(currIdx, beforeIdx);
+                            
+                            timerMove = setTimeout(_self.nextStep, delay);
+                        }
+                        this.goStep = function(_currIdx, _beforeIdx){
+                            clearTimeout(timerMove);
+
+                            if (_currIdx === 0 && _beforeIdx === btnLength - 1) {
+                                elEarthArea.classList.add('is-return');
+                            }
+                            if (_currIdx === btnLength - 1 && _beforeIdx === 0) {
+                                elEarthArea.classList.add('is-end');
+                            }
+                            setTimeout(function(){
+                                elTabBtns[_beforeIdx].classList.remove('btn-line--active');
+                                elTabBtns[_currIdx].classList.add('btn-line--active');
+
+                                elItems[_beforeIdx].classList.remove('service-intro__item--active');
+                                elItems[_currIdx].classList.add('service-intro__item--active');
+
+                                elEarthArea.classList = ['service-intro__earth'];
+                                elEarthArea.classList.add('step' + [_currIdx+1]);
+
+                                currIdx = _currIdx;
+                                beforeIdx = currIdx;
+
+                                elEarthArea.classList.remove('is-return');
+                            }, 5);
+                        }
+                        init();
+                    }
+                    window.aaa = new EarthMove();
                 })
 
             })(window, document, jQuery);

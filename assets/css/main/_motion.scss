@@ -38,7 +38,6 @@
 
 
 @keyframes pause {
-
   0%,
   100% {
     top: 0;
@@ -76,5 +75,18 @@
     top: -6rem;
     opacity: 0;
     transform: rotate(-10deg);
+  }
+}
+
+@keyframes linearUp {
+  0% {
+    opacity: 0;
+  }
+  30%, 40% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+    transform: translateY(-25%);
   }
 }
