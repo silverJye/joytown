@@ -173,7 +173,7 @@ body {
 		display: block;
 		width: 100%;
 		height: 30rem;
-		background: url('/assets/images/main/bg-wave-white.png') bottom center/auto repeat-x;
+		background: url('/joytown/assets/images/main/bg-wave-white.png') bottom center/auto repeat-x;
 		content: "";
 	}
 	.section-tit {
@@ -194,7 +194,7 @@ body {
 		}
 	}
 	.main-visual__item {
-		background: url('/assets/images/main/main-visual-bg.png') center bottom 4rem / auto auto no-repeat;
+		background: url('/joytown/assets/images/main/main-visual-bg.png') center bottom 4rem / auto auto no-repeat;
 	}
 	.swiper {
 		position: absolute;
@@ -395,7 +395,7 @@ body {
 				display: block;
 				width: 3rem;
 				height: 3rem;
-				// background: url('/assets/images/main/icon-more-service.svg') 0 0/contain no-repeat;
+				// background: url('/joytown/assets/images/main/icon-more-service.svg') 0 0/contain no-repeat;
 				content: "";
 			}
 		}
@@ -442,7 +442,7 @@ body {
 	width: 14rem;
 	height: 16rem;
 	margin: 0 auto;
-	background: url('/assets/images/main/character-stage.png') center bottom/14rem auto no-repeat;
+	background: url('/joytown/assets/images/main/character-stage.png') center bottom/14rem auto no-repeat;
 
 	.character-stage__background {
 		z-index: -1;
@@ -458,44 +458,44 @@ body {
 
 		&.character-stage__background--study {
 			z-index: 1;
-			background-image: url('/assets/images/main/character/stage-bg1.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg1.png');
 		}
 		&.character-stage__background--chapel {
 			z-index: 1;
-			background-image: url('/assets/images/main/character/stage-bg2.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg2.png');
 		}
 		&.character-stage__background--children {
-			background-image: url('/assets/images/main/character/stage-bg3.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg3.png');
 		}
 		&.character-stage__background--revival {
-			background-image: url('/assets/images/main/character/stage-bg4.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg4.png');
 		}
 		&.character-stage__background--worship {
-			background-image: url('/assets/images/main/character/stage-bg5.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg5.png');
 		}
 		&.character-stage__background--game {
-			background-image: url('/assets/images/main/character/stage-bg6.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg6.png');
 		}
 		&.character-stage__background--market {
 			z-index: 1;
-			background-image: url('/assets/images/main/character/stage-bg7.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg7.png');
 		}
 		&.character-stage__background--vod {
 			z-index: 1;
-			background-image: url('/assets/images/main/character/stage-bg8.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg8.png');
 		}
 		&.character-stage__background--seminar {
-			background-image: url('/assets/images/main/character/stage-bg9.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg9.png');
 		}
 		&.character-stage__background--studyroom {
 			z-index: 1;
-			background-image: url('/assets/images/main/character/stage-bg10.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg10.png');
 		}
 		&.character-stage__background--tree {
-			background-image: url('/assets/images/main/character/stage-bg11.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg11.png');
 		}
 		&.character-stage__background--gallery {
-			background-image: url('/assets/images/main/character/stage-bg12.png');
+			background-image: url('/joytown/assets/images/main/character/stage-bg12.png');
 		}
 	}
 }
@@ -514,40 +514,40 @@ body {
 	}	
 	
 	&.avatar-item--study {
-		background-image: url('/assets/images/main/character/character1.png');
+		background-image: url('/joytown/assets/images/main/character/character1.png');
 	}
 	&.avatar-item--chapel {
-		background-image: url('/assets/images/main/character/character2.png');
+		background-image: url('/joytown/assets/images/main/character/character2.png');
 	}
 	&.avatar-item--children {
-		background-image: url('/assets/images/main/character/character3.png');
+		background-image: url('/joytown/assets/images/main/character/character3.png');
 	}
 	&.avatar-item--revival {
-		background-image: url('/assets/images/main/character/character4.png');
+		background-image: url('/joytown/assets/images/main/character/character4.png');
 	}
 	&.avatar-item--worship {
-		background-image: url('/assets/images/main/character/character5.png');
+		background-image: url('/joytown/assets/images/main/character/character5.png');
 	}
 	&.avatar-item--game {
-		background-image: url('/assets/images/main/character/character6.png');
+		background-image: url('/joytown/assets/images/main/character/character6.png');
 	}
 	&.avatar-item--market {
-		background-image: url('/assets/images/main/character/character7.png');
+		background-image: url('/joytown/assets/images/main/character/character7.png');
 	}
 	&.avatar-item--vod {
-		background-image: url('/assets/images/main/character/character8.png');
+		background-image: url('/joytown/assets/images/main/character/character8.png');
 	}
 	&.avatar-item--seminar {
-		background-image: url('/assets/images/main/character/character9.png');
+		background-image: url('/joytown/assets/images/main/character/character9.png');
 	}
 	&.avatar-item--studyroom {
-		background-image: url('/assets/images/main/character/character10.png');
+		background-image: url('/joytown/assets/images/main/character/character10.png');
 	}
 	&.avatar-item--tree {
-		background-image: url('/assets/images/main/character/character11.png');
+		background-image: url('/joytown/assets/images/main/character/character11.png');
 	}
 	&.avatar-item--gallery {
-		background-image: url('/assets/images/main/character/character12.png');
+		background-image: url('/joytown/assets/images/main/character/character12.png');
 	}
 }
 
@@ -569,7 +569,7 @@ body {
 		width: 100vw;
 		display: block;
 		height: 14.3rem;
-		background: url('/assets/images/main/bg-wave-pink.png') 0 0 / 2000px auto repeat-x;
+		background: url('/joytown/assets/images/main/bg-wave-pink.png') 0 0 / 2000px auto repeat-x;
 		content: "";
 	}
 	.section-inner {
@@ -672,7 +672,7 @@ body {
 		position: absolute;
 		width: 3rem;
 		height: 5.6rem;
-		background: url('/assets/images/main/icon-pointer.svg') center/contain no-repeat;
+		background: url('/joytown/assets/images/main/icon-pointer.svg') center/contain no-repeat;
 
 		&.point-list__arrow--top {
 			top: 5rem;
@@ -847,7 +847,7 @@ body {
 	bottom: 10rem;
 	width: 8rem;
 	height: 6rem;
-	background: url('/assets/images/main/btn-slider-nextprev.svg') center/contain no-repeat;
+	background: url('/joytown/assets/images/main/btn-slider-nextprev.svg') center/contain no-repeat;
 	transition: transform ease-in-out .2s;
 
 	&:after {
@@ -868,7 +868,7 @@ body {
 	}
 
 	&.type-earth {
-		background-image: url('/assets/images/main/btn-slider-nextprev2.svg');
+		background-image: url('/joytown/assets/images/main/btn-slider-nextprev2.svg');
 	}
 }
 
@@ -900,7 +900,7 @@ body {
 		text-align: center;
 		padding-top: 6.8rem;
 		margin-top: -1.3rem;
-		background: url('/assets/images/main/line-communicate-tab.svg') top center/2.8rem auto no-repeat;
+		background: url('/joytown/assets/images/main/line-communicate-tab.svg') top center/2.8rem auto no-repeat;
 
 		&.communicate-tab__item--active {
 			.communicate-tab__thumb {
@@ -1174,7 +1174,7 @@ body {
 		bottom: 0;
 		width: 100%;
 		height: 13rem;
-		background: url('/assets/images/main/contact-card-cover.png') bottom center/80.2rem auto no-repeat;
+		background: url('/joytown/assets/images/main/contact-card-cover.png') bottom center/80.2rem auto no-repeat;
 		pointer-events: none;
 	}
 	.contact-card__tit {
@@ -1221,7 +1221,7 @@ body {
 	.agree-area__btn {
 		width: 3rem;
 		height: 3rem;
-		background: url('/assets/images/main/icon-arrow-bottom-yellow.svg') center right/2.3rem auto no-repeat;
+		background: url('/joytown/assets/images/main/icon-arrow-bottom-yellow.svg') center right/2.3rem auto no-repeat;
 	}
 	.agree-area__body {
 		border-radius: 0.6rem;

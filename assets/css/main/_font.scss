@@ -4,9 +4,9 @@
 	font-weight: 700;
 	font-display: swap;
 	src:
-			url('../font/NotoSans-Bold.woff2') format('woff2'),
-			url('../font/NotoSans-Bold.woff') format('woff'),
-			url('../font/NotoSans-Bold.ttf') format('truetype');
+			url('/joytown/assets/font/NotoSans-Bold.woff2') format('woff2'),
+			url('/joytown/assets/font/NotoSans-Bold.woff') format('woff'),
+			url('/joytown/assets/font/NotoSans-Bold.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'notokr';
@@ -14,9 +14,9 @@
 	font-weight: 500;
 	font-display: swap;
 	src:
-			url('../font/NotoSans-Medium.woff2') format('woff2'),
-			url('../font/NotoSans-Medium.woff') format('woff'),
-			url('../font/NotoSans-Medium.ttf') format('truetype');
+			url('/joytown/assets/font/NotoSans-Medium.woff2') format('woff2'),
+			url('/joytown/assets/font/NotoSans-Medium.woff') format('woff'),
+			url('/joytown/assets/font/NotoSans-Medium.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'notokr';
@@ -24,7 +24,7 @@
 	font-weight: 400;
 	font-display: swap;
 	src:
-			url('../font/NotoSans-Regular.woff2') format('woff2'),
-			url('../font/NotoSans-Regular.woff') format('woff'),
-			url('../font/NotoSans-Regular.ttf') format('truetype');
+			url('/joytown/assets/font/NotoSans-Regular.woff2') format('woff2'),
+			url('/joytown/assets/font/NotoSans-Regular.woff') format('woff'),
+			url('/joytown/assets/font/NotoSans-Regular.ttf') format('truetype');
 }
