@@ -10,6 +10,9 @@
 	}
 }
 
+.icon18 {
+	@include icon(1.8rem);
+}
 .icon28 {
 	@include icon(2.8rem);
 }

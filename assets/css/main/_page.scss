@@ -162,7 +162,7 @@ body {
 // 상단 비주얼
 .main-visual {
 	position: relative;
-	height: 98rem;
+	height: 104rem;
 
 	&:after {
 		z-index: 1;
@@ -174,6 +174,9 @@ body {
 		height: 30rem;
 		background: url('/joytown/assets/images/main/bg-wave-white.png') bottom center/auto repeat-x;
 		content: "";
+	}
+	.section-inner {
+		padding-top:22rem;
 	}
 	.tit-area {
 		z-index: 3;
@@ -206,19 +209,32 @@ body {
 			display: block;
 			width: 100%;
 			height: 100%;
+			margin-left: 0.4rem;
 			background: url('/joytown/assets/images/main/main-visual-bg.png') center bottom 11rem / auto auto no-repeat;
 			content: "";
+		}
+		.main-visual__avatar {
+			position: absolute;
+
+			.icon-item {
+				position: absolute;
+				bottom: 100%;
+				left: 50%;
+			}
 		}
 		.main-visual__img {
 			z-index: 2;
 			position: absolute;
 			top: 0;
 			left: 0;
+			right: 0;
 			width: 100%;
 			height: 100%;
 			display: block;
+			max-width: $max-width;
+			margin: 0 auto;
 			background: {
-				position: center bottom 31.2rem;
+				position: center bottom 31.1rem;
 				size: auto auto;
 				repeat: no-repeat;
 			}
@@ -228,6 +244,11 @@ body {
 
 			.main-visual__img {
 				background-image: url('/joytown/assets/images/main/main-visual1.png');
+			}
+			.main-visual__avatar.n1 {
+				top: 53rem;
+				left: 50%;
+				margin-left: -10rem;
 			}
 		}
 		&.n2 {
@@ -259,22 +280,107 @@ body {
 		top: 0;
 		left: 0;
 		right: 0;
-		width: 149.8rem;
+		max-width: 149.8rem;
+		width: 100%;
 		height: 100%;
 		margin: 0 auto;
 		pointer-events: none;
+
+		.balloon-area {
+			z-index: 5;
+			position: absolute;
+			left: 50%;
+			white-space: nowrap;
+
+			&.n1 {
+				bottom: 53rem;
+				margin-left: -35rem;
+			}
+			&.n2 {
+				bottom: 45rem;
+				margin-left: -30rem;
+			}
+			&.n3 {
+				bottom: 40rem;
+				margin-left: 5rem;
+			}
+			&.n4 {
+				bottom: 55rem;
+				margin-left: 16rem;
+			}
+			&.n5 {
+				bottom: 40rem;
+				margin-left: 30rem;
+			}
+		}
+		.main-avatar {
+			position: absolute;
+			left: 50%;
+
+			img {
+				width: 4rem;
+			}
+
+			.icon-area {
+				position: absolute;
+				left: 50%;
+				bottom: 120%;
+
+				+ .icon-area {
+					bottom: 100%;
+					left: 100%;
+				}
+			}
+			&.n1 {
+				bottom: 23rem;
+				margin-left: -44rem;
+			}
+			&.n2 {
+				bottom: 29rem;
+				margin-left: -33rem;
+			}
+			&.n3 {
+				bottom: 27rem;
+				margin-left: -10rem;
+			}
+			&.n4 {
+				bottom: 25rem;
+				margin-left: 3rem;
+			}
+			&.n5 {
+				bottom: 28rem;
+				margin-left: 17rem;
+			}
+			&.n6 {
+				bottom: 30rem;
+				margin-left: 24rem;
+			}
+			&.n7 {
+				bottom: 29.3rem;
+				margin-left: 31rem;
+			}
+		}
 	}
 	.main-stage-icon {
+		position: absolute;
+		left: 50%;
+
 		img {
 			width: 100%;
 		}
 		&.offering {
+			bottom: 27rem;
+			margin-left: -4.5rem;
 			width: 3.2rem;
 		}
 		&.cloud {
+			bottom: 52rem;
+			margin-left: 30rem;
 			width: 19rem;
 		}
 		&.flash {
+			bottom: 70rem;
+			margin-left: -32rem;
 			width: 67.1rem;
 		}
 	}
@@ -304,7 +410,7 @@ body {
 			margin: 0 0 9rem;
 			color: #fff;
 			font-size: 1.4rem;
-			transition: color ease-in-out .2s;
+			transition: all ease-in-out .2s;
 			text-align: right;
 			padding-right: 3.5rem;
 			background: none;
@@ -357,6 +463,31 @@ body {
 				}
 			}
 		}
+	}
+}
+
+.balloon-area {
+	position: relative;
+}
+.balloon-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+	display: inline-block;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	border-radius: 1.4rem;
+	padding: 0 1.2rem;
+	box-shadow: 0 0.2rem 0 0.2rem rgba(0,0,0,0.04);
+
+	&.balloon-box--blue {
+		background: #6754d6;
+	}
+	&.balloon-box--pink {
+		background: #e557a8;
 	}
 }
 

@@ -50,6 +50,8 @@ input { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .typo-color-black { color: #111 !important; }
 
+.icon18 { display: inline-block; width: 1.8rem; height: 1.8rem; vertical-align: middle; background-size: contain; background-repeat: no-repeat; background-position: center; }
+
 .icon28 { display: inline-block; width: 2.8rem; height: 2.8rem; vertical-align: middle; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
 .icon32 { display: inline-block; width: 3.2rem; height: 3.2rem; vertical-align: middle; background-size: contain; background-repeat: no-repeat; background-position: center; }
@@ -81,6 +83,8 @@ input { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon-mypage { background-image: url("/joytown/assets/images/main/icon28-mypage.svg"); }
 
 [data-motion*="wiggle-up"] { position: relative; -webkit-animation: wiggle-up ease-in-out 2.5s infinite; animation: wiggle-up ease-in-out 2.5s infinite; opacity: 0; }
+
+[data-motion*="balloon-up"] { position: relative; -webkit-animation: balloon-up ease-in-out 3.5s infinite; animation: balloon-up ease-in-out 3.5s infinite; opacity: 0; }
 
 [data-motion*="avatar-move"] { position: relative; -webkit-animation: avatarMove ease-in-out 2s infinite; animation: avatarMove ease-in-out 2s infinite; opacity: 1; -webkit-transform-origin: bottom center; transform-origin: bottom center; }
 
@@ -143,6 +147,40 @@ input { -webkit-box-sizing: border-box; box-sizing: border-box; }
     opacity: 0;
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg); } }
+
+@-webkit-keyframes balloon-up { 0% { -webkit-transform: scale(0.5) translateX(-0.5rem); transform: scale(0.5) translateX(-0.5rem);
+    left: 0;
+    top: 0;
+    opacity: 0; }
+  10%, 60% { opacity: 1; }
+  10%, 40% { left: -0.3rem;
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem); }
+  25%, 55% { left: 0.3rem;
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem); }
+  70%, 100% { left: 0;
+    top: -6rem;
+    opacity: 0;
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem); } }
+
+@keyframes balloon-up { 0% { -webkit-transform: scale(0.5) translateX(-0.5rem); transform: scale(0.5) translateX(-0.5rem);
+    left: 0;
+    top: 0;
+    opacity: 0; }
+  10%, 60% { opacity: 1; }
+  10%, 40% { left: -0.3rem;
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem); }
+  25%, 55% { left: 0.3rem;
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem); }
+  70%, 100% { left: 0;
+    top: -6rem;
+    opacity: 0;
+    -webkit-transform: translateX(0.5rem);
+            transform: translateX(0.5rem); } }
 
 @-webkit-keyframes linearUp { 0% { opacity: 0; }
   30%, 40% { opacity: 1; }
@@ -216,9 +254,11 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .tit-area { margin-bottom: 6rem; }
 
-.main-visual { position: relative; height: 98rem; }
+.main-visual { position: relative; height: 104rem; }
 
 .main-visual:after { z-index: 1; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 30rem; background: url("/joytown/assets/images/main/bg-wave-white.png") bottom center/auto repeat-x; content: ""; }
+
+.main-visual .section-inner { padding-top: 22rem; }
 
 .main-visual .tit-area { z-index: 3; position: relative; }
 
@@ -230,13 +270,19 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-visual__item { position: relative; }
 
-.main-visual .main-visual__item:after { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 11rem/auto auto no-repeat; content: ""; }
+.main-visual .main-visual__item:after { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; margin-left: 0.4rem; background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 11rem/auto auto no-repeat; content: ""; }
 
-.main-visual .main-visual__item .main-visual__img { z-index: 2; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; background-position: center bottom 31.2rem; background-size: auto auto; background-repeat: no-repeat; }
+.main-visual .main-visual__item .main-visual__avatar { position: absolute; }
+
+.main-visual .main-visual__item .main-visual__avatar .icon-item { position: absolute; bottom: 100%; left: 50%; }
+
+.main-visual .main-visual__item .main-visual__img { z-index: 2; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; display: block; max-width: 1400px; margin: 0 auto; background-position: center bottom 31.1rem; background-size: auto auto; background-repeat: no-repeat; }
 
 .main-visual .main-visual__item.n1 { background: -webkit-gradient(linear, left top, left bottom, from(#ffc1b9), to(#c19dff)); background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%); }
 
 .main-visual .main-visual__item.n1 .main-visual__img { background-image: url("/joytown/assets/images/main/main-visual1.png"); }
+
+.main-visual .main-visual__item.n1 .main-visual__avatar.n1 { top: 53rem; left: 50%; margin-left: -10rem; }
 
 .main-visual .main-visual__item.n2 { background: -webkit-gradient(linear, left top, left bottom, from(#f9cb9e), to(#ef86c1)); background: linear-gradient(to bottom, #f9cb9e 0%, #ef86c1 100%); }
 
@@ -248,21 +294,57 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .swiper { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; }
 
-.main-visual .main-visual__stage { z-index: 5; position: absolute; top: 0; left: 0; right: 0; width: 149.8rem; height: 100%; margin: 0 auto; pointer-events: none; }
+.main-visual .main-visual__stage { z-index: 5; position: absolute; top: 0; left: 0; right: 0; max-width: 149.8rem; width: 100%; height: 100%; margin: 0 auto; pointer-events: none; }
+
+.main-visual .main-visual__stage .balloon-area { z-index: 5; position: absolute; left: 50%; white-space: nowrap; }
+
+.main-visual .main-visual__stage .balloon-area.n1 { bottom: 53rem; margin-left: -35rem; }
+
+.main-visual .main-visual__stage .balloon-area.n2 { bottom: 45rem; margin-left: -30rem; }
+
+.main-visual .main-visual__stage .balloon-area.n3 { bottom: 40rem; margin-left: 5rem; }
+
+.main-visual .main-visual__stage .balloon-area.n4 { bottom: 55rem; margin-left: 16rem; }
+
+.main-visual .main-visual__stage .balloon-area.n5 { bottom: 40rem; margin-left: 30rem; }
+
+.main-visual .main-visual__stage .main-avatar { position: absolute; left: 50%; }
+
+.main-visual .main-visual__stage .main-avatar img { width: 4rem; }
+
+.main-visual .main-visual__stage .main-avatar .icon-area { position: absolute; left: 50%; bottom: 120%; }
+
+.main-visual .main-visual__stage .main-avatar .icon-area + .icon-area { bottom: 100%; left: 100%; }
+
+.main-visual .main-visual__stage .main-avatar.n1 { bottom: 23rem; margin-left: -44rem; }
+
+.main-visual .main-visual__stage .main-avatar.n2 { bottom: 29rem; margin-left: -33rem; }
+
+.main-visual .main-visual__stage .main-avatar.n3 { bottom: 27rem; margin-left: -10rem; }
+
+.main-visual .main-visual__stage .main-avatar.n4 { bottom: 25rem; margin-left: 3rem; }
+
+.main-visual .main-visual__stage .main-avatar.n5 { bottom: 28rem; margin-left: 17rem; }
+
+.main-visual .main-visual__stage .main-avatar.n6 { bottom: 30rem; margin-left: 24rem; }
+
+.main-visual .main-visual__stage .main-avatar.n7 { bottom: 29.3rem; margin-left: 31rem; }
+
+.main-visual .main-stage-icon { position: absolute; left: 50%; }
 
 .main-visual .main-stage-icon img { width: 100%; }
 
-.main-visual .main-stage-icon.offering { width: 3.2rem; }
+.main-visual .main-stage-icon.offering { bottom: 27rem; margin-left: -4.5rem; width: 3.2rem; }
 
-.main-visual .main-stage-icon.cloud { width: 19rem; }
+.main-visual .main-stage-icon.cloud { bottom: 52rem; margin-left: 30rem; width: 19rem; }
 
-.main-visual .main-stage-icon.flash { width: 67.1rem; }
+.main-visual .main-stage-icon.flash { bottom: 70rem; margin-left: -32rem; width: 67.1rem; }
 
 .main-visual .main-visual__paging-area { position: absolute; left: 0; right: 0; top: 0; height: 100%; max-width: 1400px; margin: 0 auto; }
 
 .main-visual .main-visual__paging-area .main-visual__paging-grid { position: absolute; top: 50%; right: 2rem; margin-top: -10rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); text-align: right; width: 15rem; }
 
-.main-visual .main-visual__paging-area .main-visual__paging-item { display: block; width: 100%; position: relative; margin: 0 0 9rem; color: #fff; font-size: 1.4rem; -webkit-transition: color ease-in-out .2s; transition: color ease-in-out .2s; text-align: right; padding-right: 3.5rem; background: none; }
+.main-visual .main-visual__paging-area .main-visual__paging-item { display: block; width: 100%; position: relative; margin: 0 0 9rem; color: #fff; font-size: 1.4rem; -webkit-transition: all ease-in-out .2s; transition: all ease-in-out .2s; text-align: right; padding-right: 3.5rem; background: none; }
 
 .main-visual .main-visual__paging-area .main-visual__paging-item:last-child { margin-bottom: 0; }
 
@@ -281,6 +363,14 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 .main-visual .main-visual__paging-area .main-visual__paging-item.swiper-pagination-bullet-active:after { background: #4d4098; }
 
 .main-visual .main-visual__paging-area .main-visual__paging-item.swiper-pagination-bullet-active > span { opacity: 1; }
+
+.balloon-area { position: relative; }
+
+.balloon-box { position: absolute; top: 0; left: 0; color: #fff; font-size: 1.2rem; text-align: center; display: inline-block; height: 2.8rem; line-height: 2.8rem; border-radius: 1.4rem; padding: 0 1.2rem; -webkit-box-shadow: 0 0.2rem 0 0.2rem rgba(0, 0, 0, 0.04); box-shadow: 0 0.2rem 0 0.2rem rgba(0, 0, 0, 0.04); }
+
+.balloon-box.balloon-box--blue { background: #6754d6; }
+
+.balloon-box.balloon-box--pink { background: #e557a8; }
 
 .main-service { position: relative; }
 

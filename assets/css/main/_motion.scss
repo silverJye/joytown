@@ -3,6 +3,11 @@
   animation: wiggle-up ease-in-out 2.5s infinite;
 	opacity: 0;
 }
+[data-motion*="balloon-up"] {
+  position: relative;
+  animation: balloon-up ease-in-out 3.5s infinite;
+	opacity: 0;
+}
 
 [data-motion*="avatar-move"] {
   position: relative;
@@ -82,6 +87,38 @@
     top: -6rem;
     opacity: 0;
     transform: rotate(-10deg);
+  }
+}
+@keyframes balloon-up {
+  0% {
+		transform: scale(0.5) translateX(-0.5rem);
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  10%,
+  60% {
+    opacity: 1;
+  }
+
+  10%,
+  40% {
+    left: -0.3rem;
+    transform: translateX(0.5rem);
+  }
+
+  25%,
+  55% {
+    left: 0.3rem;
+    transform: translateX(-0.5rem);
+  }
+
+  70%, 100% {
+    left: 0;
+    top: -6rem;
+    opacity: 0;
+    transform: translateX(0.5rem);
   }
 }
 
