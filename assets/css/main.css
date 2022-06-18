@@ -30,11 +30,11 @@ caption { opacity: 0; position: absolute; display: block; width: 1px; height: 1p
 
 input { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@font-face { font-family: 'notokr'; font-style: normal; font-weight: 700; font-display: swap; src: url("../font/NotoSans-Bold.woff2") format("woff2"), url("../font/NotoSans-Bold.woff") format("woff"), url("../font/NotoSans-Bold.ttf") format("truetype"); }
+@font-face { font-family: 'notokr'; font-style: normal; font-weight: 700; font-display: swap; src: url("/joytown/assets/font/NotoSans-Bold.woff2") format("woff2"), url("/joytown/assets/font/NotoSans-Bold.woff") format("woff"), url("/joytown/assets/font/NotoSans-Bold.ttf") format("truetype"); }
 
-@font-face { font-family: 'notokr'; font-style: normal; font-weight: 500; font-display: swap; src: url("../font/NotoSans-Medium.woff2") format("woff2"), url("../font/NotoSans-Medium.woff") format("woff"), url("../font/NotoSans-Medium.ttf") format("truetype"); }
+@font-face { font-family: 'notokr'; font-style: normal; font-weight: 500; font-display: swap; src: url("/joytown/assets/font/NotoSans-Medium.woff2") format("woff2"), url("/joytown/assets/font/NotoSans-Medium.woff") format("woff"), url("/joytown/assets/font/NotoSans-Medium.ttf") format("truetype"); }
 
-@font-face { font-family: 'notokr'; font-style: normal; font-weight: 400; font-display: swap; src: url("../font/NotoSans-Regular.woff2") format("woff2"), url("../font/NotoSans-Regular.woff") format("woff"), url("../font/NotoSans-Regular.ttf") format("truetype"); }
+@font-face { font-family: 'notokr'; font-style: normal; font-weight: 400; font-display: swap; src: url("/joytown/assets/font/NotoSans-Regular.woff2") format("woff2"), url("/joytown/assets/font/NotoSans-Regular.woff") format("woff"), url("/joytown/assets/font/NotoSans-Regular.ttf") format("truetype"); }
 
 .typo-size-100 { font-size: 6rem !important; letter-spacing: -0.025em !important; line-height: 1.2 !important; }
 
@@ -62,23 +62,23 @@ input { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon62 { display: inline-block; width: 6.2rem; height: 6.2rem; vertical-align: middle; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
-.icon-emoji-heart { background-image: url("/assets/images/main/icon-emoji-heart.svg"); }
+.icon-emoji-heart { background-image: url("/joytown/assets/images/main/icon-emoji-heart.svg"); }
 
-.icon-heart-pink { background-image: url("/assets/images/main/icon-heart-pink.svg"); }
+.icon-heart-pink { background-image: url("/joytown/assets/images/main/icon-heart-pink.svg"); }
 
-.icon-heart-purple { background-image: url("/assets/images/main/icon-heart-purple.svg"); }
+.icon-heart-purple { background-image: url("/joytown/assets/images/main/icon-heart-purple.svg"); }
 
-.icon-thumbsup-pink { background-image: url("/assets/images/main/icon-thumbsup-pink.svg"); }
+.icon-thumbsup-pink { background-image: url("/joytown/assets/images/main/icon-thumbsup-pink.svg"); }
 
-.icon-emoji-smile { background-image: url("/assets/images/main/icon-emoji-smile.svg"); }
+.icon-emoji-smile { background-image: url("/joytown/assets/images/main/icon-emoji-smile.svg"); }
 
-.icon-arrow-right-pink { background-image: url("/assets/images/main/icon-arrow-right-pink.svg"); }
+.icon-arrow-right-pink { background-image: url("/joytown/assets/images/main/icon-arrow-right-pink.svg"); }
 
-.icon-lock { background-image: url("/assets/images/main/icon28-lock.svg"); }
+.icon-lock { background-image: url("/joytown/assets/images/main/icon28-lock.svg"); }
 
-.icon-unlock { background-image: url("/assets/images/main/icon28-unlock.svg"); }
+.icon-unlock { background-image: url("/joytown/assets/images/main/icon28-unlock.svg"); }
 
-.icon-mypage { background-image: url("/assets/images/main/icon28-mypage.svg"); }
+.icon-mypage { background-image: url("/joytown/assets/images/main/icon28-mypage.svg"); }
 
 [data-motion*="wiggle-up"] { position: relative; -webkit-animation: wiggle-up ease-in-out 2.5s infinite; animation: wiggle-up ease-in-out 2.5s infinite; opacity: 0; }
 
@@ -216,7 +216,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual { position: relative; height: 98rem; background: -webkit-gradient(linear, left top, left bottom, from(#ffc1b9), to(#c19dff)); background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%); }
 
-.main-visual:after { z-index: 1; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 30rem; background: url("/assets/images/main/bg-wave-white.png") bottom center/auto repeat-x; content: ""; }
+.main-visual:after { z-index: 1; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 30rem; background: url("/joytown/assets/images/main/bg-wave-white.png") bottom center/auto repeat-x; content: ""; }
 
 .main-visual .section-tit { font-size: 6rem; letter-spacing: -0.025em; line-height: 1.2; text-align: left; color: #fff; }
 
@@ -224,7 +224,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-visual__added .btn-base { display: block; margin-bottom: 1.5rem; }
 
-.main-visual .main-visual__item { background: url("/assets/images/main/main-visual-bg.png") center bottom 4rem/auto auto no-repeat; }
+.main-visual .main-visual__item { background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 4rem/auto auto no-repeat; }
 
 .main-visual .swiper { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; }
 
@@ -358,65 +358,65 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .service-intro .service-intro__item-inner { position: absolute; bottom: 100%; left: 0; right: 0; margin-bottom: -3rem; }
 
-.character-stage { position: relative; display: block; width: 14rem; height: 16rem; margin: 0 auto; background: url("/assets/images/main/character-stage.png") center bottom/14rem auto no-repeat; }
+.character-stage { position: relative; display: block; width: 14rem; height: 16rem; margin: 0 auto; background: url("/joytown/assets/images/main/character-stage.png") center bottom/14rem auto no-repeat; }
 
 .character-stage .character-stage__background { z-index: -1; position: absolute; display: block; width: 100%; height: 100%; background-size: 100% auto; background-position: center top; background-repeat: no-repeat; }
 
-.character-stage .character-stage__background.character-stage__background--study { z-index: 1; background-image: url("/assets/images/main/character/stage-bg1.png"); }
+.character-stage .character-stage__background.character-stage__background--study { z-index: 1; background-image: url("/joytown/assets/images/main/character/stage-bg1.png"); }
 
-.character-stage .character-stage__background.character-stage__background--chapel { z-index: 1; background-image: url("/assets/images/main/character/stage-bg2.png"); }
+.character-stage .character-stage__background.character-stage__background--chapel { z-index: 1; background-image: url("/joytown/assets/images/main/character/stage-bg2.png"); }
 
-.character-stage .character-stage__background.character-stage__background--children { background-image: url("/assets/images/main/character/stage-bg3.png"); }
+.character-stage .character-stage__background.character-stage__background--children { background-image: url("/joytown/assets/images/main/character/stage-bg3.png"); }
 
-.character-stage .character-stage__background.character-stage__background--revival { background-image: url("/assets/images/main/character/stage-bg4.png"); }
+.character-stage .character-stage__background.character-stage__background--revival { background-image: url("/joytown/assets/images/main/character/stage-bg4.png"); }
 
-.character-stage .character-stage__background.character-stage__background--worship { background-image: url("/assets/images/main/character/stage-bg5.png"); }
+.character-stage .character-stage__background.character-stage__background--worship { background-image: url("/joytown/assets/images/main/character/stage-bg5.png"); }
 
-.character-stage .character-stage__background.character-stage__background--game { background-image: url("/assets/images/main/character/stage-bg6.png"); }
+.character-stage .character-stage__background.character-stage__background--game { background-image: url("/joytown/assets/images/main/character/stage-bg6.png"); }
 
-.character-stage .character-stage__background.character-stage__background--market { z-index: 1; background-image: url("/assets/images/main/character/stage-bg7.png"); }
+.character-stage .character-stage__background.character-stage__background--market { z-index: 1; background-image: url("/joytown/assets/images/main/character/stage-bg7.png"); }
 
-.character-stage .character-stage__background.character-stage__background--vod { z-index: 1; background-image: url("/assets/images/main/character/stage-bg8.png"); }
+.character-stage .character-stage__background.character-stage__background--vod { z-index: 1; background-image: url("/joytown/assets/images/main/character/stage-bg8.png"); }
 
-.character-stage .character-stage__background.character-stage__background--seminar { background-image: url("/assets/images/main/character/stage-bg9.png"); }
+.character-stage .character-stage__background.character-stage__background--seminar { background-image: url("/joytown/assets/images/main/character/stage-bg9.png"); }
 
-.character-stage .character-stage__background.character-stage__background--studyroom { z-index: 1; background-image: url("/assets/images/main/character/stage-bg10.png"); }
+.character-stage .character-stage__background.character-stage__background--studyroom { z-index: 1; background-image: url("/joytown/assets/images/main/character/stage-bg10.png"); }
 
-.character-stage .character-stage__background.character-stage__background--tree { background-image: url("/assets/images/main/character/stage-bg11.png"); }
+.character-stage .character-stage__background.character-stage__background--tree { background-image: url("/joytown/assets/images/main/character/stage-bg11.png"); }
 
-.character-stage .character-stage__background.character-stage__background--gallery { background-image: url("/assets/images/main/character/stage-bg12.png"); }
+.character-stage .character-stage__background.character-stage__background--gallery { background-image: url("/joytown/assets/images/main/character/stage-bg12.png"); }
 
 .avatar-item { z-index: 2; position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background-size: 100% auto; background-position: center top; background-repeat: no-repeat; }
 
-.avatar-item.avatar-item--study { background-image: url("/assets/images/main/character/character1.png"); }
+.avatar-item.avatar-item--study { background-image: url("/joytown/assets/images/main/character/character1.png"); }
 
-.avatar-item.avatar-item--chapel { background-image: url("/assets/images/main/character/character2.png"); }
+.avatar-item.avatar-item--chapel { background-image: url("/joytown/assets/images/main/character/character2.png"); }
 
-.avatar-item.avatar-item--children { background-image: url("/assets/images/main/character/character3.png"); }
+.avatar-item.avatar-item--children { background-image: url("/joytown/assets/images/main/character/character3.png"); }
 
-.avatar-item.avatar-item--revival { background-image: url("/assets/images/main/character/character4.png"); }
+.avatar-item.avatar-item--revival { background-image: url("/joytown/assets/images/main/character/character4.png"); }
 
-.avatar-item.avatar-item--worship { background-image: url("/assets/images/main/character/character5.png"); }
+.avatar-item.avatar-item--worship { background-image: url("/joytown/assets/images/main/character/character5.png"); }
 
-.avatar-item.avatar-item--game { background-image: url("/assets/images/main/character/character6.png"); }
+.avatar-item.avatar-item--game { background-image: url("/joytown/assets/images/main/character/character6.png"); }
 
-.avatar-item.avatar-item--market { background-image: url("/assets/images/main/character/character7.png"); }
+.avatar-item.avatar-item--market { background-image: url("/joytown/assets/images/main/character/character7.png"); }
 
-.avatar-item.avatar-item--vod { background-image: url("/assets/images/main/character/character8.png"); }
+.avatar-item.avatar-item--vod { background-image: url("/joytown/assets/images/main/character/character8.png"); }
 
-.avatar-item.avatar-item--seminar { background-image: url("/assets/images/main/character/character9.png"); }
+.avatar-item.avatar-item--seminar { background-image: url("/joytown/assets/images/main/character/character9.png"); }
 
-.avatar-item.avatar-item--studyroom { background-image: url("/assets/images/main/character/character10.png"); }
+.avatar-item.avatar-item--studyroom { background-image: url("/joytown/assets/images/main/character/character10.png"); }
 
-.avatar-item.avatar-item--tree { background-image: url("/assets/images/main/character/character11.png"); }
+.avatar-item.avatar-item--tree { background-image: url("/joytown/assets/images/main/character/character11.png"); }
 
-.avatar-item.avatar-item--gallery { background-image: url("/assets/images/main/character/character12.png"); }
+.avatar-item.avatar-item--gallery { background-image: url("/joytown/assets/images/main/character/character12.png"); }
 
 .main-point { position: relative; background: #f7afaf; }
 
 .main-point .big-logo-joytown { position: absolute; left: 50%; bottom: 100%; -webkit-transform: translateX(-50%) translateY(-10%); transform: translateX(-50%) translateY(-10%); }
 
-.main-point:before { position: absolute; bottom: 100%; left: 0; width: 100vw; display: block; height: 14.3rem; background: url("/assets/images/main/bg-wave-pink.png") 0 0/2000px auto repeat-x; content: ""; }
+.main-point:before { position: absolute; bottom: 100%; left: 0; width: 100vw; display: block; height: 14.3rem; background: url("/joytown/assets/images/main/bg-wave-pink.png") 0 0/2000px auto repeat-x; content: ""; }
 
 .main-point .section-inner { position: relative; }
 
@@ -454,7 +454,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .point-list .point-list__desc { color: #fff; font-size: 1.6rem; }
 
-.point-list .point-list__arrow { position: absolute; width: 3rem; height: 5.6rem; background: url("/assets/images/main/icon-pointer.svg") center/contain no-repeat; }
+.point-list .point-list__arrow { position: absolute; width: 3rem; height: 5.6rem; background: url("/joytown/assets/images/main/icon-pointer.svg") center/contain no-repeat; }
 
 .point-list .point-list__arrow.point-list__arrow--top { top: 5rem; left: 100%; margin-left: -1.5rem; -webkit-transform: rotate(-90deg); transform: rotate(-90deg); -webkit-transform-origin: left top; transform-origin: left top; }
 
@@ -518,7 +518,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .live-slider .live-slider__desc { font-size: 1.6rem; letter-spacing: -0.025em; line-height: 1.2; font-weight: 500; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-.live-slider-nextprev { position: absolute; display: block; top: auto; right: 9rem; bottom: 10rem; width: 8rem; height: 6rem; background: url("/assets/images/main/btn-slider-nextprev.svg") center/contain no-repeat; -webkit-transition: -webkit-transform ease-in-out .2s; transition: -webkit-transform ease-in-out .2s; transition: transform ease-in-out .2s; transition: transform ease-in-out .2s, -webkit-transform ease-in-out .2s; }
+.live-slider-nextprev { position: absolute; display: block; top: auto; right: 9rem; bottom: 10rem; width: 8rem; height: 6rem; background: url("/joytown/assets/images/main/btn-slider-nextprev.svg") center/contain no-repeat; -webkit-transition: -webkit-transform ease-in-out .2s; transition: -webkit-transform ease-in-out .2s; transition: transform ease-in-out .2s; transition: transform ease-in-out .2s, -webkit-transform ease-in-out .2s; }
 
 .live-slider-nextprev:after { display: none; }
 
@@ -528,13 +528,13 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .live-slider-nextprev.swiper-button-prev:hover { -webkit-transform: translateX(-0.5rem) scaleX(-1); transform: translateX(-0.5rem) scaleX(-1); }
 
-.live-slider-nextprev.type-earth { background-image: url("/assets/images/main/btn-slider-nextprev2.svg"); }
+.live-slider-nextprev.type-earth { background-image: url("/joytown/assets/images/main/btn-slider-nextprev2.svg"); }
 
 .communicate-tab { position: relative; max-width: 96rem; margin: 0 auto; padding: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
 .communicate-tab:before { position: absolute; top: 0; left: 50%; width: 100vw; height: 0.1rem; background: #aa95fe; -webkit-transform: translateX(-50%); transform: translateX(-50%); content: ""; }
 
-.communicate-tab .communicate-tab__item { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; text-align: center; padding-top: 6.8rem; margin-top: -1.3rem; background: url("/assets/images/main/line-communicate-tab.svg") top center/2.8rem auto no-repeat; }
+.communicate-tab .communicate-tab__item { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; text-align: center; padding-top: 6.8rem; margin-top: -1.3rem; background: url("/joytown/assets/images/main/line-communicate-tab.svg") top center/2.8rem auto no-repeat; }
 
 .communicate-tab .communicate-tab__item.communicate-tab__item--active .communicate-tab__thumb { outline: 0.7rem solid #ddd5ff; }
 
@@ -624,7 +624,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .contact-card .contact-card__cont { -webkit-transform: translateY(100%); transform: translateY(100%); background: #aa95fe; border-radius: 6rem 6rem 0 0; margin: 0 4rem; padding: 4rem 4rem 6rem; text-align: center; -webkit-transform: translateY(50%); transform: translateY(50%); -webkit-transition: -webkit-transform ease-in-out .5s .2s; transition: -webkit-transform ease-in-out .5s .2s; transition: transform ease-in-out .5s .2s; transition: transform ease-in-out .5s .2s, -webkit-transform ease-in-out .5s .2s; }
 
-.contact-card .contact-card__cover { z-index: 1; position: absolute; left: 0; bottom: 0; width: 100%; height: 13rem; background: url("/assets/images/main/contact-card-cover.png") bottom center/80.2rem auto no-repeat; pointer-events: none; }
+.contact-card .contact-card__cover { z-index: 1; position: absolute; left: 0; bottom: 0; width: 100%; height: 13rem; background: url("/joytown/assets/images/main/contact-card-cover.png") bottom center/80.2rem auto no-repeat; pointer-events: none; }
 
 .contact-card .contact-card__tit strong { display: block; margin-bottom: 1rem; font-size: 1.2rem; font-weight: 700; color: #f3d672; letter-spacing: 0.2em; }
 
@@ -642,7 +642,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .contact-card.screenon .contact-card__cont { -webkit-transform: translateY(0); transform: translateY(0); }
 
-.agree-area .agree-area__btn { width: 3rem; height: 3rem; background: url("/assets/images/main/icon-arrow-bottom-yellow.svg") center right/2.3rem auto no-repeat; }
+.agree-area .agree-area__btn { width: 3rem; height: 3rem; background: url("/joytown/assets/images/main/icon-arrow-bottom-yellow.svg") center right/2.3rem auto no-repeat; }
 
 .agree-area .agree-area__body { border-radius: 0.6rem; padding: 1rem 1.6rem; background: rgba(255, 255, 255, 0.1); max-height: 12rem; overflow: auto; text-align: left; margin-top: 1rem; }
 
