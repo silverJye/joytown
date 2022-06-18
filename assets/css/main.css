@@ -82,6 +82,8 @@ input { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 [data-motion*="wiggle-up"] { position: relative; -webkit-animation: wiggle-up ease-in-out 2.5s infinite; animation: wiggle-up ease-in-out 2.5s infinite; opacity: 0; }
 
+[data-motion*="avatar-move"] { position: relative; -webkit-animation: avatarMove ease-in-out 2s infinite; animation: avatarMove ease-in-out 2s infinite; opacity: 1; -webkit-transform-origin: bottom center; transform-origin: bottom center; }
+
 [data-motion*="dongdong"] { -webkit-animation: dongdong ease-in-out 2.5s infinite; animation: dongdong ease-in-out 2.5s infinite; }
 
 [data-motion-delay*="-300ms"] { -webkit-animation-delay: -0.3s; animation-delay: -0.3s; }
@@ -214,9 +216,11 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .tit-area { margin-bottom: 6rem; }
 
-.main-visual { position: relative; height: 98rem; background: -webkit-gradient(linear, left top, left bottom, from(#ffc1b9), to(#c19dff)); background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%); }
+.main-visual { position: relative; height: 98rem; }
 
 .main-visual:after { z-index: 1; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 30rem; background: url("/joytown/assets/images/main/bg-wave-white.png") bottom center/auto repeat-x; content: ""; }
+
+.main-visual .tit-area { z-index: 3; position: relative; }
 
 .main-visual .section-tit { font-size: 6rem; letter-spacing: -0.025em; line-height: 1.2; text-align: left; color: #fff; }
 
@@ -224,9 +228,59 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-visual__added .btn-base { display: block; margin-bottom: 1.5rem; }
 
-.main-visual .main-visual__item { background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 4rem/auto auto no-repeat; }
+.main-visual .main-visual__item { position: relative; }
+
+.main-visual .main-visual__item:after { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 11rem/auto auto no-repeat; content: ""; }
+
+.main-visual .main-visual__item .main-visual__img { z-index: 2; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; background-position: center bottom 31.2rem; background-size: auto auto; background-repeat: no-repeat; }
+
+.main-visual .main-visual__item.n1 { background: -webkit-gradient(linear, left top, left bottom, from(#ffc1b9), to(#c19dff)); background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%); }
+
+.main-visual .main-visual__item.n1 .main-visual__img { background-image: url("/joytown/assets/images/main/main-visual1.png"); }
+
+.main-visual .main-visual__item.n2 { background: -webkit-gradient(linear, left top, left bottom, from(#f9cb9e), to(#ef86c1)); background: linear-gradient(to bottom, #f9cb9e 0%, #ef86c1 100%); }
+
+.main-visual .main-visual__item.n2 .main-visual__img { background-image: url("/joytown/assets/images/main/main-visual2.png"); }
+
+.main-visual .main-visual__item.n3 { background: -webkit-gradient(linear, left top, left bottom, from(#fd92e3), to(#7ddec9)); background: linear-gradient(to bottom, #fd92e3 0%, #7ddec9 100%); }
+
+.main-visual .main-visual__item.n3 .main-visual__img { background-image: url("/joytown/assets/images/main/main-visual3.png"); }
 
 .main-visual .swiper { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; }
+
+.main-visual .main-visual__stage { z-index: 5; position: absolute; top: 0; left: 0; right: 0; width: 149.8rem; height: 100%; margin: 0 auto; pointer-events: none; }
+
+.main-visual .main-stage-icon img { width: 100%; }
+
+.main-visual .main-stage-icon.offering { width: 3.2rem; }
+
+.main-visual .main-stage-icon.cloud { width: 19rem; }
+
+.main-visual .main-stage-icon.flash { width: 67.1rem; }
+
+.main-visual .main-visual__paging-area { position: absolute; left: 0; right: 0; top: 0; height: 100%; max-width: 1400px; margin: 0 auto; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-grid { position: absolute; top: 50%; right: 2rem; margin-top: -10rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); text-align: right; width: 15rem; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item { display: block; width: 100%; position: relative; margin: 0 0 9rem; color: #fff; font-size: 1.4rem; -webkit-transition: color ease-in-out .2s; transition: color ease-in-out .2s; text-align: right; padding-right: 3.5rem; background: none; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item:last-child { margin-bottom: 0; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item:last-child:before { display: none; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item > span { opacity: 0.6; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item > span strong { display: block; font-weight: 700; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item:after { position: absolute; top: 50%; right: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 2.3rem; height: 2.3rem; border-radius: 50%; background: #fff; -webkit-transition: background-color ease-in-out .2s; transition: background-color ease-in-out .2s; content: ""; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item:before { position: absolute; right: 1.1rem; top: 50%; bottom: -11rem; width: 0.1rem; background: #fff; display: block; content: ""; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item.swiper-pagination-bullet-active { color: #4d4098; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item.swiper-pagination-bullet-active:after { background: #4d4098; }
+
+.main-visual .main-visual__paging-area .main-visual__paging-item.swiper-pagination-bullet-active > span { opacity: 1; }
 
 .main-service { position: relative; }
 
@@ -536,11 +590,13 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .communicate-tab .communicate-tab__item { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; text-align: center; padding-top: 6.8rem; margin-top: -1.3rem; background: url("/joytown/assets/images/main/line-communicate-tab.svg") top center/2.8rem auto no-repeat; }
 
-.communicate-tab .communicate-tab__item.communicate-tab__item--active .communicate-tab__thumb { outline: 0.7rem solid #ddd5ff; }
+.communicate-tab .communicate-tab__item.communicate-tab__item--active .communicate-tab__thumb { border-color: #ddd5ff; }
 
 .communicate-tab .communicate-tab__btn { padding: 0 1rem; font-size: 1.6rem; }
 
-.communicate-tab .communicate-tab__thumb { width: 7.5rem; height: 7.5rem; border-radius: 50%; overflow: hidden; margin: 0 auto 2rem; }
+.communicate-tab .communicate-tab__thumb { width: 8.2rem; height: 8.2rem; border-radius: 50%; overflow: hidden; margin: -0.7rem auto 2rem; border: 0.7rem solid transparent; -webkit-transition: border-color ease-in-out .2s; transition: border-color ease-in-out .2s; }
+
+.communicate-tab .communicate-tab__thumb:focus, .communicate-tab .communicate-tab__thumb:hover { border-color: #ddd5ff; }
 
 .communicate-tab .communicate-tab__thumb img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 

@@ -52,38 +52,51 @@
                             <a href="#" class="btn-base btn-base--white">도입문의</a>
                         </div>
                     </div>
-                    <div class="swiper">
+                    <div class="main-visual-slider swiper">
                         <div class="swiper-wrapper">
-                            <div class="main-visual__item swiper-slide">
+                            <div class="main-visual__item swiper-slide n1">
+                                <span class="main-visual__img">
+                                    <span class="main-visual__avatar n1">
+                                        <img src="/joytown/assets/images/main/main-visual1-char1.png" alt="" width="30" data-motion="avatar-move">
+                                    </span>
+                                </span>
                             </div>
-                            <div class="main-visual__item swiper-slide">
+                            <div class="main-visual__item swiper-slide n2">
+                                <span class="main-visual__img"></span>
                             </div>
-                            <div class="main-visual__item swiper-slide">
+                            <div class="main-visual__item swiper-slide n3">
+                                <span class="main-visual__img"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="main-visual__paging-area swiper-pagination">
-                        <div class="main-visual__paging-item main-visual__paging-item--active">
-                            <span>
-                                <strong>SPACE A</strong>
-                                이제, 우리는<br>JoyTown
-                            </span>
+
+                    <div class="main-visual__paging-area ">
+                        <div class="main-visual__paging-grid swiper-pagination">
+
                         </div>
-                        <div class="main-visual__paging-item">
-                            <span>
-                                <strong>SPACE B</strong>
-                                JoyTown에서는<br>모두 모일 수 있어요
-                            </span>
+                    </div>
+
+                    <div class="main-visual__stage">
+                        <div class="main-stage-icon flash">
+                            <img src="/joytown/assets/images/main/main-flash.png" alt="" data-motion="dongdong" data-motion-delay="600ms">
                         </div>
-                        <div class="main-visual__paging-item">
-                            <span>
-                                <strong>SPACE C</strong>
-                                JoyTown을<br>시작하세요
-                            </span>
+                        <div class="main-stage-icon offering">
+                            <img src="/joytown/assets/images/main/main-offering.svg" alt="">
                         </div>
+                        <div class="main-stage-icon cloud">
+                            <img src="/joytown/assets/images/main/main-cloud.png" alt="" data-motion="dongdong">
+                        </div>
+
                     </div>
                   
                 </div>
+
+                <i class="main-icon icon-bubble">
+                    <img src="/joytown/assets/images/main/main-dongdong2.png" alt="">
+                </i>
+                <i class="main-icon icon-bubble">
+                    <img src="/joytown/assets/images/main/main-dongdong1.png" alt="">
+                </i>
             </section>
             <section class="section-area main-service">
                 <div class="section-inner">
@@ -967,6 +980,63 @@
                     }
                     inView();
 
+
+                    const mainSwiper = new Swiper('.main-visual-slider', {
+                        slidesPerView:15,
+                        centeredSlides: true,
+                        speed: 400,
+                        spaceBetween: 0,
+                        effect : 'fade',
+                        loop: true,
+                        // navigation: {
+                        //     nextEl: '.main-live .swiper-button-next',
+                        //     prevEl: '.main-live .swiper-button-prev',
+                        // },`
+                        autoplay: {
+                            delay: 5000,
+                            // disableOnInteraction: false
+                        },
+                        breakpoints: {
+                            1200: {
+                            // slidesPerView: 5,  //브라우저가 768보다 클 때
+                            }
+                        },
+                        pagination: {
+                            el: '.main-visual__paging-grid',
+                            clickable: true,
+                            renderBullet: function(idx, className) {
+                                if (idx === 0) {
+                                    return '<button type="button" class="main-visual__paging-item ' + className  + '">'
+                                    + '    <span>'
+                                    + '        <strong>SPACE A</strong>'
+                                    + '        이제, 우리는<br>JoyTown'
+                                    + '    </span>'
+                                    + '</button>';
+
+                                    return;
+                                }
+                                   
+                                if (idx === 1) {
+                                    return '<button type="button" class="main-visual__paging-item ' + className  + '">'
+                                    + '    <span>'
+                                    + '        <strong>SPACE B</strong>'
+                                    + '        JoyTown에서는<br>모두 모일 수 있어요'
+                                    + '    </span>'
+                                    + '</button>';
+                                    return;
+                                }
+                                if (idx === 2) {
+                                    return '<button type="button" class="main-visual__paging-item ' + className  + '">'
+                                    + '    <span>'
+                                    + '        <strong>SPACE C</strong>'
+                                    + '        JoyTown을<br>시작하세요'
+                                    + '    </span>'
+                                    + '</button>';
+                                    return;
+                                }
+                            }
+                        }
+                    });
 
                     const swiper = new Swiper('.live-slider', {
                         slidesPerView: 5,

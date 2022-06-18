@@ -163,7 +163,6 @@ body {
 .main-visual {
 	position: relative;
 	height: 98rem;
-	background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%);
 
 	&:after {
 		z-index: 1;
@@ -175,6 +174,10 @@ body {
 		height: 30rem;
 		background: url('/joytown/assets/images/main/bg-wave-white.png') bottom center/auto repeat-x;
 		content: "";
+	}
+	.tit-area {
+		z-index: 3;
+		position: relative;
 	}
 	.section-tit {
 		@include typo-size-100;
@@ -194,7 +197,53 @@ body {
 		}
 	}
 	.main-visual__item {
-		background: url('/joytown/assets/images/main/main-visual-bg.png') center bottom 4rem / auto auto no-repeat;
+		position: relative;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: url('/joytown/assets/images/main/main-visual-bg.png') center bottom 11rem / auto auto no-repeat;
+			content: "";
+		}
+		.main-visual__img {
+			z-index: 2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: {
+				position: center bottom 31.2rem;
+				size: auto auto;
+				repeat: no-repeat;
+			}
+		}
+		&.n1 {
+			background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%);
+
+			.main-visual__img {
+				background-image: url('/joytown/assets/images/main/main-visual1.png');
+			}
+		}
+		&.n2 {
+			background: linear-gradient(to bottom, #f9cb9e 0%, #ef86c1 100%);
+
+			.main-visual__img {
+				background-image: url('/joytown/assets/images/main/main-visual2.png');
+			}
+		}
+		&.n3 {
+			background: linear-gradient(to bottom, #fd92e3 0%, #7ddec9 100%);
+
+			.main-visual__img {
+				background-image: url('/joytown/assets/images/main/main-visual3.png');
+			}
+		}
 	}
 	.swiper {
 		position: absolute;
@@ -203,6 +252,111 @@ body {
 		display: block;
 		width: 100%;
 		height: 100%;
+	}
+	.main-visual__stage {
+		z-index: 5;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 149.8rem;
+		height: 100%;
+		margin: 0 auto;
+		pointer-events: none;
+	}
+	.main-stage-icon {
+		img {
+			width: 100%;
+		}
+		&.offering {
+			width: 3.2rem;
+		}
+		&.cloud {
+			width: 19rem;
+		}
+		&.flash {
+			width: 67.1rem;
+		}
+	}
+
+	.main-visual__paging-area {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 100%;
+		max-width: $max-width;
+		margin: 0 auto;
+
+		.main-visual__paging-grid {
+			position: absolute;
+			top: 50%;
+			right: 2rem;
+			margin-top: -10rem;
+			transform: translateY(-50%);
+			text-align: right;
+			width: 15rem;
+		}
+		.main-visual__paging-item {
+			display: block;
+			width: 100%;
+			position: relative;
+			margin: 0 0 9rem;
+			color: #fff;
+			font-size: 1.4rem;
+			transition: color ease-in-out .2s;
+			text-align: right;
+			padding-right: 3.5rem;
+			background: none;
+
+			&:last-child {
+				margin-bottom: 0;
+
+				&:before {
+					display: none;
+				}
+			}
+			> span {
+				opacity: 0.6;
+
+				strong {
+					display: block;
+					font-weight: 700;
+				}
+			}
+			&:after {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+				width: 2.3rem;
+				height: 2.3rem;
+				border-radius: 50%;
+				background: #fff;
+				transition: background-color ease-in-out .2s;
+				content: "";
+			}
+			&:before {
+				position: absolute;
+				right: 1.1rem;
+				top: 50%;
+				bottom: -11rem;
+				width: 0.1rem;
+				background: #fff;
+				display: block;
+				content: "";
+			}
+			&.swiper-pagination-bullet-active {
+				color: #4d4098;
+
+				&:after {
+					background: #4d4098;
+				}
+				> span {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
 
@@ -904,7 +1058,7 @@ body {
 
 		&.communicate-tab__item--active {
 			.communicate-tab__thumb {
-				outline: 0.7rem solid #ddd5ff;
+				border-color: #ddd5ff;
 			}
 		}
 	}
@@ -913,12 +1067,18 @@ body {
 		font-size: 1.6rem;
 	}
 	.communicate-tab__thumb {
-		width: 7.5rem;
-		height: 7.5rem;
+		width: 8.2rem;
+		height: 8.2rem;
 		border-radius: 50%;
 		overflow: hidden;
-		margin: 0 auto 2rem;
+		margin: -0.7rem auto 2rem;
+		border: 0.7rem solid transparent;
+		transition: border-color ease-in-out .2s;
 
+		&:focus,
+		&:hover {
+			border-color: #ddd5ff;
+		}
 		img {
 			width: 100%;
 			height: 100%;

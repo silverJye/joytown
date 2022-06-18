@@ -4,6 +4,13 @@
 	opacity: 0;
 }
 
+[data-motion*="avatar-move"] {
+  position: relative;
+  animation: avatarMove ease-in-out 2s infinite;
+	opacity: 1;
+  transform-origin: bottom center;
+}
+
 
 [data-motion*="dongdong"] {
   animation: dongdong ease-in-out 2.5s infinite;
