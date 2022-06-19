@@ -229,7 +229,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .header-area .header-area__grid h1 a { position: relative; display: inline-block; vertical-align: middle; -webkit-transition: -webkit-transform ease-in-out .2s; transition: -webkit-transform ease-in-out .2s; transition: transform ease-in-out .2s; transition: transform ease-in-out .2s, -webkit-transform ease-in-out .2s; }
 
-.header-area .header-area__grid .logo-ani { position: absolute; left: 10.5rem; top: 50%; margin-top: 0.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.header-area .header-area__grid .logo-ani { position: absolute; left: 10rem; top: 50%; margin-top: 0.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
 .header-area .header-area__util { position: absolute; right: 2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
