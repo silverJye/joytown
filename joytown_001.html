@@ -1223,8 +1223,85 @@
                         }
                         init();
                     }
-                    window.aaa = new EarthMove();
+                    
+                    window.earthMove = new EarthMove();
+
+
+
+                    function CommunicateSection(){
+                        var elMainCommunicate = document.querySelector('.main-communicate');
+                        var _self = this;
+                        
+                        var elTabArea = elMainCommunicate.querySelector('.communicate-tab');
+                        var elTabBtns = elTabArea.querySelectorAll('.communicate-tab__item');
+                        var elItems = elMainCommunicate.querySelectorAll('.communicate-intro__section');
+
+                        var btnLength = elTabBtns.length;
+
+                        var currIdx = 0;
+                        var beforeIdx = btnLength - 1;
+
+                        var delay = 4000;
+
+                        var timerMove;
+
+                        function init(){
+                            timerMove = setTimeout(_self.nextStep, delay);
+                            addEvents();
+                        }
+                        function addEvents() {
+
+                            elTabBtns.forEach(function(_elItem, _idx) {
+                                _elItem.addEventListener('click', function(){
+                                    _self.goStep(_idx, currIdx);
+                                    // timerMove = setTimeout(_self.nextStep, delay); // 누르면 자동재생 해제
+                                })
+                            })
+                        }
+                        this.prevStep = function(){
+                            if (currIdx <= 0) {
+                                currIdx = btnLength - 1;
+                                beforeIdx = 0;
+                            } else {
+                                beforeIdx = currIdx;
+                                currIdx--;
+                            }
+                            _self.goStep(currIdx, beforeIdx);
+                            
+                            timerMove = setTimeout(_self.nextStep, delay);
+                        }
+                        this.nextStep = function(){
+                            if (currIdx >= btnLength - 1) {
+                                currIdx = 0;
+                                beforeIdx = btnLength - 1;
+                            } else {
+                                beforeIdx = currIdx;
+                                currIdx++;
+                            }
+                            _self.goStep(currIdx, beforeIdx);
+                            
+                            timerMove = setTimeout(_self.nextStep, delay);
+                        }
+                        this.goStep = function(_currIdx, _beforeIdx){
+                            clearTimeout(timerMove);
+
+                            setTimeout(function(){
+                                elTabBtns[_beforeIdx].classList.remove('communicate-tab__item--active');
+                                elTabBtns[_currIdx].classList.add('communicate-tab__item--active');
+
+                                elItems[_beforeIdx].classList.remove('communicate-intro__section--active');
+                                elItems[_currIdx].classList.add('communicate-intro__section--active');
+
+                                currIdx = _currIdx;
+                                beforeIdx = currIdx;
+                            }, 5);
+                        }
+                        init();
+                    }
+                    
+                    window.communicateMove = new CommunicateSection();
                 })
+
 
             })(window, document, jQuery);
         </script>

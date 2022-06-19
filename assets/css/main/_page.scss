@@ -550,8 +550,8 @@ body {
 			left: 50%;
 			transform: translate(-50%, -50%);
 			display: block;
-			width: 110rem;
-			height: 110rem;
+			width: 100rem;
+			height: 100rem;
 			border: 0.1rem solid #6754d6;
 			border-radius: 50%;
 			opacity: 0.5;
@@ -562,12 +562,12 @@ body {
 
 		@keyframes earthLine {
 			0%, 100% {
-				opacity: 0.4;
+				opacity: 0.2;
 				transform: translate(-50%, -50%) scale(1);
 			}
 			50% {
-				opacity: 0.2;
-				transform: translate(-50%, -50%) scale(1.025);
+				opacity: 0.1;
+				transform: translate(-50%, -50%) scale(1.015);
 			}
 		}
 
@@ -662,6 +662,7 @@ body {
 			}
 		}
 		strong { 
+			@include typo-size-500;
 			z-index: 4;
 			position: absolute;
 			bottom: 90%;
@@ -670,6 +671,8 @@ body {
 			text-align: center;
 			display: block;
 			padding-bottom: 1rem;
+			color: #4d4098;
+			font-weight: 700;
 			transition: all ease-in-out .2s;
 			// padding: 0.5rem 4rem 0 0;
 

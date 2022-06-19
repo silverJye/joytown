@@ -390,21 +390,21 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .service-intro .service-intro__earth:before { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; background: radial-gradient(#b778fd, #ab94fe); border-radius: 50%; content: ""; }
 
-.service-intro .service-intro__earth:after { z-index: -1; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; width: 110rem; height: 110rem; border: 0.1rem solid #6754d6; border-radius: 50%; opacity: 0.5; pointer-events: none; -webkit-animation: earthLine ease-in-out 2s infinite; animation: earthLine ease-in-out 2s infinite; content: ""; }
+.service-intro .service-intro__earth:after { z-index: -1; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; width: 100rem; height: 100rem; border: 0.1rem solid #6754d6; border-radius: 50%; opacity: 0.5; pointer-events: none; -webkit-animation: earthLine ease-in-out 2s infinite; animation: earthLine ease-in-out 2s infinite; content: ""; }
 
-@-webkit-keyframes earthLine { 0%, 100% { opacity: 0.4;
+@-webkit-keyframes earthLine { 0%, 100% { opacity: 0.2;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 0.2;
-    -webkit-transform: translate(-50%, -50%) scale(1.025);
-            transform: translate(-50%, -50%) scale(1.025); } }
+  50% { opacity: 0.1;
+    -webkit-transform: translate(-50%, -50%) scale(1.015);
+            transform: translate(-50%, -50%) scale(1.015); } }
 
-@keyframes earthLine { 0%, 100% { opacity: 0.4;
+@keyframes earthLine { 0%, 100% { opacity: 0.2;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1); }
-  50% { opacity: 0.2;
-    -webkit-transform: translate(-50%, -50%) scale(1.025);
-            transform: translate(-50%, -50%) scale(1.025); } }
+  50% { opacity: 0.1;
+    -webkit-transform: translate(-50%, -50%) scale(1.015);
+            transform: translate(-50%, -50%) scale(1.015); } }
 
 .service-intro .service-intro__earth.step1 { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
 
@@ -486,7 +486,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 @keyframes avatarMove { 0%, 100% { -webkit-transform: rotate(2deg); transform: rotate(2deg); }
   50% { -webkit-transform: rotate(-2deg); transform: rotate(-2deg); } }
 
-.service-intro .service-intro__item strong { z-index: 4; position: absolute; bottom: 90%; left: 0; width: 100%; text-align: center; display: block; padding-bottom: 1rem; -webkit-transition: all ease-in-out .2s; transition: all ease-in-out .2s; }
+.service-intro .service-intro__item strong { font-size: 2rem; letter-spacing: -0.025em; line-height: 1.2; font-weight: 500; z-index: 4; position: absolute; bottom: 90%; left: 0; width: 100%; text-align: center; display: block; padding-bottom: 1rem; color: #4d4098; font-weight: 700; -webkit-transition: all ease-in-out .2s; transition: all ease-in-out .2s; }
 
 .service-intro .service-intro__item strong:before { position: absolute; top: 0; right: 0; display: block; width: 3rem; height: 3rem; content: ""; }
 
