@@ -229,7 +229,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .header-area .header-area__grid h1 a { position: relative; display: inline-block; vertical-align: middle; -webkit-transition: -webkit-transform ease-in-out .2s; transition: -webkit-transform ease-in-out .2s; transition: transform ease-in-out .2s; transition: transform ease-in-out .2s, -webkit-transform ease-in-out .2s; }
 
-.header-area .header-area__grid .logo-ani { position: absolute; left: 11.5rem; top: 50%; margin-top: 0.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.header-area .header-area__grid .logo-ani { position: absolute; left: 10.5rem; top: 50%; margin-top: 0.8rem; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
 .header-area .header-area__util { position: absolute; right: 2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
@@ -384,7 +384,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-icon.icon-heart img { width: 100%; }
 
-.main-visual .main-icon.icon-heart.n1 { margin-left: -76rem; bottom: 14rem; }
+.main-visual .main-icon.icon-heart.n1 { margin-left: -72rem; bottom: 14rem; }
 
 .main-visual .main-icon.icon-heart.n2 { z-index: 1; margin-left: 58rem; bottom: 14rem; }
 
@@ -392,9 +392,11 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-icon.icon-bubble.n1 { bottom: 15rem; text-align: left; }
 
-.main-visual .main-icon.icon-bubble.n1 img { margin-left: -2rem; }
+.main-visual .main-icon.icon-bubble.n1 img { margin-left: -6rem; }
 
 .main-visual .main-icon.icon-bubble.n2 { bottom: 5rem; text-align: right; }
+
+.main-visual .main-icon.icon-bubble.n2 img { margin-right: 6rem; }
 
 .balloon-area { position: relative; }
 
