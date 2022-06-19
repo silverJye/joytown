@@ -183,11 +183,11 @@ body {
 		z-index: 1;
 		position: absolute;
 		bottom: 0;
-		left: 0;
+		left: -11rem;
 		display: block;
-		width: 100%;
+		width: calc(100% + 35rem);
 		height: 30rem;
-		background: url('/joytown/assets/images/main/bg-wave-white.png') bottom center/auto repeat-x;
+		background: url('/joytown/assets/images/main/bg-wave-white.png') center bottom/auto repeat-x;
 		content: "";
 	}
 	.section-inner {
@@ -492,12 +492,12 @@ body {
 				width: 100%;
 			}
 			&.n1 {
-				margin-left: -68rem;
-				bottom: 5rem;
+				margin-left: -67rem;
+				bottom: 4rem;
 			}
 			&.n2 {
-				margin-left: 47rem;
-				bottom: 4rem;
+				margin-left: 42rem;
+				bottom: 2rem;
 			}
 			.balloon-area {
 				z-index: 5;

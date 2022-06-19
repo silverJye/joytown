@@ -260,7 +260,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual { position: relative; height: 104rem; }
 
-.main-visual:after { z-index: 1; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 30rem; background: url("/joytown/assets/images/main/bg-wave-white.png") bottom center/auto repeat-x; content: ""; }
+.main-visual:after { z-index: 1; position: absolute; bottom: 0; left: -11rem; display: block; width: calc(100% + 35rem); height: 30rem; background: url("/joytown/assets/images/main/bg-wave-white.png") center bottom/auto repeat-x; content: ""; }
 
 .main-visual .section-inner { padding-top: 22rem; }
 
@@ -374,9 +374,9 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-icon.icon-avatar img { width: 100%; }
 
-.main-visual .main-icon.icon-avatar.n1 { margin-left: -68rem; bottom: 5rem; }
+.main-visual .main-icon.icon-avatar.n1 { margin-left: -67rem; bottom: 4rem; }
 
-.main-visual .main-icon.icon-avatar.n2 { margin-left: 47rem; bottom: 4rem; }
+.main-visual .main-icon.icon-avatar.n2 { margin-left: 42rem; bottom: 2rem; }
 
 .main-visual .main-icon.icon-avatar .balloon-area { z-index: 5; position: absolute; left: 120%; bottom: 100%; white-space: nowrap; }
 
