@@ -464,6 +464,76 @@ body {
 			}
 		}
 	}
+	.main-icon {
+		z-index: 10;
+		position: absolute;
+
+		&.icon-avatar {
+			z-index: 1;
+			left: 50%;
+			width: 4rem;
+
+			img {
+				width: 100%;
+			}
+			&.n1 {
+				margin-left: -68rem;
+				bottom: 5rem;
+			}
+			&.n2 {
+				margin-left: 47rem;
+				bottom: 4rem;
+			}
+			.balloon-area {
+				z-index: 5;
+				position: absolute;
+				left: 120%;
+				bottom: 100%;
+				white-space: nowrap;
+			}
+		}
+		&.icon-heart {
+			width: 3rem;
+			left: 50%;
+
+			img {
+				width: 100%;
+			}
+			&.n1 {
+				margin-left: -76rem;
+				bottom: 14rem;
+			}
+			&.n2 {
+				z-index: 1;
+				margin-left: 58rem;
+				bottom: 14rem;
+			}
+		}
+		&.icon-bubble {
+			left: 50%;
+			transform: translateX(-50%);
+			min-width: 1800px;
+			max-width: 2000px;
+			width: 100%;
+
+			&.n1 {
+				bottom: 15rem;
+				text-align: left;
+
+				img {
+					margin-left: -2rem;
+				}
+			}
+			&.n2 {
+				bottom: 5rem;
+				text-align: right;
+
+				img {
+					// margin-left: -2rem;
+				}
+			}
+		}
+	}
 }
 
 .balloon-area {

@@ -364,6 +364,34 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .main-visual__paging-area .main-visual__paging-item.swiper-pagination-bullet-active > span { opacity: 1; }
 
+.main-visual .main-icon { z-index: 10; position: absolute; }
+
+.main-visual .main-icon.icon-avatar { z-index: 1; left: 50%; width: 4rem; }
+
+.main-visual .main-icon.icon-avatar img { width: 100%; }
+
+.main-visual .main-icon.icon-avatar.n1 { margin-left: -68rem; bottom: 5rem; }
+
+.main-visual .main-icon.icon-avatar.n2 { margin-left: 47rem; bottom: 4rem; }
+
+.main-visual .main-icon.icon-avatar .balloon-area { z-index: 5; position: absolute; left: 120%; bottom: 100%; white-space: nowrap; }
+
+.main-visual .main-icon.icon-heart { width: 3rem; left: 50%; }
+
+.main-visual .main-icon.icon-heart img { width: 100%; }
+
+.main-visual .main-icon.icon-heart.n1 { margin-left: -76rem; bottom: 14rem; }
+
+.main-visual .main-icon.icon-heart.n2 { z-index: 1; margin-left: 58rem; bottom: 14rem; }
+
+.main-visual .main-icon.icon-bubble { left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); min-width: 1800px; max-width: 2000px; width: 100%; }
+
+.main-visual .main-icon.icon-bubble.n1 { bottom: 15rem; text-align: left; }
+
+.main-visual .main-icon.icon-bubble.n1 img { margin-left: -2rem; }
+
+.main-visual .main-icon.icon-bubble.n2 { bottom: 5rem; text-align: right; }
+
 .balloon-area { position: relative; }
 
 .balloon-box { position: absolute; top: 0; left: 0; color: #fff; font-size: 1.2rem; text-align: center; display: inline-block; height: 2.8rem; line-height: 2.8rem; border-radius: 1.4rem; padding: 0 1.2rem; -webkit-box-shadow: 0 0.2rem 0 0.2rem rgba(0, 0, 0, 0.04); box-shadow: 0 0.2rem 0 0.2rem rgba(0, 0, 0, 0.04); }
