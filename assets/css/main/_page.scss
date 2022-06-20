@@ -194,7 +194,7 @@ body {
 		padding-top:22rem;
 	}
 	.tit-area {
-		z-index: 3;
+		z-index: 10;
 		position: relative;
 	}
 	.section-tit {
@@ -206,6 +206,7 @@ body {
 
 	}
 	.main-visual__added {
+		position: relative;
 		width: 20rem;
 		margin-top: 4rem;
 
@@ -225,9 +226,10 @@ body {
 			width: 100%;
 			height: 100%;
 			margin-left: 0.4rem;
-			background: url('/joytown/assets/images/main/main-visual-bg.png') center bottom 11rem / auto auto no-repeat;
+			background: url('/joytown/assets/images/main/main-visual-bg.png') center bottom 11rem / 149.8rem auto no-repeat;
 			content: "";
 		}
+			
 		.main-visual__avatar {
 			position: absolute;
 
@@ -250,7 +252,7 @@ body {
 			margin: 0 auto;
 			background: {
 				position: center bottom 31.1rem;
-				size: auto auto;
+				size: 42.7rem auto;
 				repeat: no-repeat;
 			}
 		}
@@ -1005,7 +1007,10 @@ body {
 	}
 	.point-list__box {
 		position: relative;
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		border-radius: 3rem;
 		height: 28.4rem;
 		text-align: center;
@@ -1475,8 +1480,10 @@ body {
 		overflow: hidden;
 		
 		img {
-			max-width: 14.9rem;
+			// max-width: 14.9rem;
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }
@@ -1532,7 +1539,7 @@ body {
 }
 .contact-card {
 	position: relative;
-	width: 80.2rem;
+	max-width: 80.2rem;
 	margin: 0 auto;
 	color: #fff;
 
@@ -1550,10 +1557,12 @@ body {
 		z-index: 1;
 		position: absolute;
 		left: 0;
+		right: 0;
+		margin: 0 auto;
 		bottom: 0;
-		width: 100%;
+		max-width: 80.2rem;
 		height: 13rem;
-		background: url('/joytown/assets/images/main/contact-card-cover.png') bottom center/80.2rem auto no-repeat;
+		background: url('/joytown/assets/images/main/contact-card-cover.png') bottom center/contain no-repeat;
 		pointer-events: none;
 	}
 	.contact-card__tit {

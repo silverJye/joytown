@@ -1,12 +1,49 @@
 /* only pc
 **************************/
 @media screen and (min-width: $min-width-pc) {
-	
+	.only-tablet,
+	.only-resp {
+		display: none !important;
+	}
 }
 
 @media screen and (max-width: 1200px) {
 	html {
 		font-size: 9px;
+	}
+	.icon62 {
+		width: 5rem;
+		height: 5rem;
+	}
+	.live-slider-nextprev.swiper-button-prev {
+		left: 2rem;
+	}
+	.live-slider-nextprev {
+		right: 2rem;
+	}
+	.point-list .point-list__box {
+		font-size: 2.6rem;
+	}
+	.point-list .point-list__column {
+		padding: 0 1rem;
+	}
+	.point-list .point-list__arrow {
+		height: 3rem;
+		background-size: 3rem auto;
+		background-position: top center;
+	}
+
+	
+	.contact-area .contact-icon-chat.n1 {
+		right: 100%;
+		left: auto;
+		margin-right: -20rem;
+	}
+	.contact-area .contact-icon-chat.n2 {
+		right: -8rem;
+	}
+	.contact-area .contact-icon-chat.n3 {
+		right: -9rem;
 	}
 }
 
@@ -14,15 +51,249 @@
 **************************/
 @media screen and (max-width: $max-width-tablet) {
 	html {
-		font-size: 8px;
+		font-size: 10px;
+	}
+	.header-area,
+	.header-area .header-area__fixed {
+		height: 6rem !important;
+	}
+	.header-area .header-area__grid h1 a {
+		z-index: 2;
+		transform: scale(0.6);
+	}
+	.header-area .header-area__util {
+		position: fixed;
+		top: 3.3rem;
+		left: 2rem;
+		text-align: left;
+	}
+	.header-area .header-area__util .btn-icon--joytown {
+		position: absolute;
+		top: -1.7rem;
+		right: 0;
+		padding: 0.6rem;
+		transform: scale(0.7);
+		transform-origin: center right;
+	}
+	.btn-icon {
+		padding: 0.2rem;
+	} 
+	.btn-icon + .btn-icon {
+		margin-left: 0.2rem;
 	}
 	.section-inner {
-		padding: 6rem 0;
+		padding: 6rem 2rem;
+	}
+	.section-tit {
+		font-size: 3.2rem;
+	}
+	.tit-area {
+		margin-bottom: 4rem;
+	}
+
+	.main-visual {
+		height: 80rem;
+	}
+	.main-visual:after {
+		width: 100%;
+		left: 0;
+		background-size: contain;
+	}
+	.main-visual .section-tit {
+		font-size: 4.6rem;
+	}
+	.main-visual .main-visual__item:after {
+		background-size: 119.84rem auto;
+		background-position: center bottom 9rem;
+	}
+	.main-visual .main-visual__img,
+	.main-visual .main-visual__stage {
+		transform: scale(0.8);
+		transform-origin: center bottom;
+	}
+	.main-visual .main-icon.icon-avatar.n1 {
+		margin-left: -36%;
+		bottom: -3rem;
+	}
+	.main-visual .main-icon.icon-avatar.n2 {
+		margin-left: 32%;
+		bottom: -1rem;
+	}
+	.main-visual .main-visual__item.n1 .main-visual__avatar.n1 { 
+		top: 28rem;
+	}
+
+	.main-service {
+		z-index: 2;
+		background: #fff;
+	}
+	.main-service .section-inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.main-service .section-tit {
+		font-size: 3.8rem;
+	}
+
+	.main-point {
+		z-index: 3;
+	}
+	.main-point .section-inner > .bg-icon.ps-right.n1 {
+		top: 30%;
+	}
+	.main-point .section-inner > .bg-icon.ps-right.n2 {
+		top: 40%;
+	}
+	.point-list {
+		flex-wrap: wrap;
+	}
+	.point-list .point-list__column {
+		flex : 1 1 50%;
+	}
+	.point-list .point-list__box {
+		margin: 1rem 0;
+	}
+
+	.live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner {
+		width: 34rem;
+	}
+
+	.main-service .tab-area {
+		max-width: 67rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.main-service .section-inner {
+		 padding-bottom: 40rem;
+	}
+	.service-intro {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: scale(0.8) translateX(-63%);
+		overflow: visible;
+	}
+	.main-service .bg-particle {
+		transform: scale(0.5);
+		transform-origin: top right;
+		z-index: -1;
+	}
+	.main-point .big-logo-joytown {
+		pointer-events: none;
+	}
+	.main-point .big-logo-joytown img {
+		transform: scale(0.5);
+		transform-origin: center bottom;
+	}
+	.main-point {
+		margin-top: -4rem;
+	}
+	.main-point:before {
+		pointer-events: none;
+	}
+	.point-list .point-list__box {
+		min-height: 0;
+		height: 100%;
+		font-size: 2rem;
+		padding: 4rem 1rem;
+		margin: 0;
+	}
+	.point-list .point-list__visual {
+		display: block;
+	}
+	.point-list .point-list__visual img {
+		width: 7.5rem;
+	}
+	.point-list .point-list__row.point-list__row--divide {
+		padding: 2rem 0;
+	}
+	.point-list .point-list__row.point-list__row--divide .point-list__box {
+		margin-bottom: 2rem;
+	}
+	.point-list .point-list__column {
+		padding-bottom: 3rem;
+	}
+	.point-list .point-list__row {
+		padding: 1rem 0;
+	}
+	.live-slider-nextprev {
+		z-index: 4;
+		width: 7rem;
+		height: 5rem;
+	}
+	.point-list .point-list__desc {
+		font-size: 1.4rem;
+	}
+
+	.communicate-intro {
+		margin-top: 3rem;
+	}
+	.communicate-intro .communicate-intro__link-area {
+		padding-right: 3rem;
+	}
+	.communicate-intro {
+		padding: 3rem 2rem;
+	}
+	.communicate-link .communicate-link__tit {
+		font-size: 2.8rem;
+	}
+	.communicate-link .communicate-link__cont {
+		min-width: 20rem;
+	}
+	.communicate-tab {
+		display: block;
+		text-align: center;
+	}
+	.communicate-tab:before {
+		display: none;
+	}
+	.communicate-tab .communicate-tab__thumb {
+		width: 6rem;
+		height: 6rem;
+		margin-bottom: 0.6rem;
+	}
+	.communicate-tab .communicate-tab__item {
+		display: inline-block;
+		background: none;
+		padding: 0;
+		margin: 0.6rem;
+	}
+	.communicate-intro .communicate-intro__section {
+		flex-wrap: wrap;
+	}
+	.communicate-intro .communicate-intro__link-area {
+		flex: 1 1 100%;
+		padding: 0 0 2rem;
+	}
+	.communicate-intro .communicate-intro__cont {
+		flex: 1 1 100%;
+		padding: 0;
+	}
+	.communicate-intro .communicate-intro__cont {
+		font-size: 1.6rem;
+	}
+
+	.main-contact .section-tit {
+		font-size: 3.4rem;
+	}
+	.contact-area .contact-icon img {
+		transform: scale(0.6);
+	}
+	.footer-area .footer-area__grid {
+		padding: 4rem 2rem;
+		font-size: 1.4rem;
 	}
 }
 
 /* phone max
 **************************/
 @media screen and (max-width: $max-width-phone) {
-
+	.only-tablet {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 350px) {
+	html {
+		font-size: 8px;
+	}
 }

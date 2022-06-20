@@ -264,23 +264,23 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .main-visual .section-inner { padding-top: 22rem; }
 
-.main-visual .tit-area { z-index: 3; position: relative; }
+.main-visual .tit-area { z-index: 10; position: relative; }
 
 .main-visual .section-tit { font-size: 6rem; letter-spacing: -0.025em; line-height: 1.2; text-align: left; color: #fff; }
 
-.main-visual .main-visual__added { width: 20rem; margin-top: 4rem; }
+.main-visual .main-visual__added { position: relative; width: 20rem; margin-top: 4rem; }
 
 .main-visual .main-visual__added .btn-base { display: block; margin-bottom: 1.5rem; }
 
 .main-visual .main-visual__item { position: relative; }
 
-.main-visual .main-visual__item:after { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; margin-left: 0.4rem; background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 11rem/auto auto no-repeat; content: ""; }
+.main-visual .main-visual__item:after { position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%; margin-left: 0.4rem; background: url("/joytown/assets/images/main/main-visual-bg.png") center bottom 11rem/149.8rem auto no-repeat; content: ""; }
 
 .main-visual .main-visual__item .main-visual__avatar { position: absolute; }
 
 .main-visual .main-visual__item .main-visual__avatar .icon-item { position: absolute; bottom: 100%; left: 50%; }
 
-.main-visual .main-visual__item .main-visual__img { z-index: 2; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; display: block; max-width: 1400px; margin: 0 auto; background-position: center bottom 31.1rem; background-size: auto auto; background-repeat: no-repeat; }
+.main-visual .main-visual__item .main-visual__img { z-index: 2; position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; display: block; max-width: 1400px; margin: 0 auto; background-position: center bottom 31.1rem; background-size: 42.7rem auto; background-repeat: no-repeat; }
 
 .main-visual .main-visual__item.n1 { background: -webkit-gradient(linear, left top, left bottom, from(#ffc1b9), to(#c19dff)); background: linear-gradient(to bottom, #ffc1b9 0%, #c19dff 100%); }
 
@@ -618,7 +618,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .point-list .point-list__row.point-list__row--divide .point-list__box { margin-top: 0; }
 
-.point-list .point-list__box { position: relative; display: block; border-radius: 3rem; height: 28.4rem; text-align: center; font-size: 3.2rem; font-weight: 700; color: #4d4098; padding: 5rem 1rem; background: #fff; margin: 2rem 0; }
+.point-list .point-list__box { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-radius: 3rem; height: 28.4rem; text-align: center; font-size: 3.2rem; font-weight: 700; color: #4d4098; padding: 5rem 1rem; background: #fff; margin: 2rem 0; }
 
 .point-list .point-list__box.point-list__box--yellow { background: #ffe1a8; }
 
@@ -776,7 +776,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .communicate-thumbs .communicate-thumbs__item { border-radius: 1.6rem; overflow: hidden; }
 
-.communicate-thumbs .communicate-thumbs__item img { max-width: 14.9rem; width: 100%; }
+.communicate-thumbs .communicate-thumbs__item img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
 .main-contact { background: #ffdced; }
 
@@ -800,11 +800,11 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .contact-area .contact-icon-chat.n3 { top: 10rem; right: 4rem; }
 
-.contact-card { position: relative; width: 80.2rem; margin: 0 auto; color: #fff; }
+.contact-card { position: relative; max-width: 80.2rem; margin: 0 auto; color: #fff; }
 
 .contact-card .contact-card__cont { -webkit-transform: translateY(100%); transform: translateY(100%); background: #aa95fe; border-radius: 6rem 6rem 0 0; margin: 0 4rem; padding: 4rem 4rem 6rem; text-align: center; -webkit-transform: translateY(50%); transform: translateY(50%); -webkit-transition: -webkit-transform ease-in-out .5s .2s; transition: -webkit-transform ease-in-out .5s .2s; transition: transform ease-in-out .5s .2s; transition: transform ease-in-out .5s .2s, -webkit-transform ease-in-out .5s .2s; }
 
-.contact-card .contact-card__cover { z-index: 1; position: absolute; left: 0; bottom: 0; width: 100%; height: 13rem; background: url("/joytown/assets/images/main/contact-card-cover.png") bottom center/80.2rem auto no-repeat; pointer-events: none; }
+.contact-card .contact-card__cover { z-index: 1; position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 0; max-width: 80.2rem; height: 13rem; background: url("/joytown/assets/images/main/contact-card-cover.png") bottom center/contain no-repeat; pointer-events: none; }
 
 .contact-card .contact-card__tit strong { display: block; margin-bottom: 1rem; font-size: 1.2rem; font-weight: 700; color: #f3d672; letter-spacing: 0.2em; }
 
@@ -970,12 +970,85 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 /* only pc
 **************************/
-@media screen and (max-width: 1200px) { html { font-size: 9px; } }
+@media screen and (min-width: 871px) { .only-tablet, .only-resp { display: none !important; } }
+
+@media screen and (max-width: 1200px) { html { font-size: 9px; }
+  .icon62 { width: 5rem; height: 5rem; }
+  .live-slider-nextprev.swiper-button-prev { left: 2rem; }
+  .live-slider-nextprev { right: 2rem; }
+  .point-list .point-list__box { font-size: 2.6rem; }
+  .point-list .point-list__column { padding: 0 1rem; }
+  .point-list .point-list__arrow { height: 3rem; background-size: 3rem auto; background-position: top center; }
+  .contact-area .contact-icon-chat.n1 { right: 100%; left: auto; margin-right: -20rem; }
+  .contact-area .contact-icon-chat.n2 { right: -8rem; }
+  .contact-area .contact-icon-chat.n3 { right: -9rem; } }
 
 /* table max
 **************************/
-@media screen and (max-width: 870px) { html { font-size: 8px; }
-  .section-inner { padding: 6rem 0; } }
+@media screen and (max-width: 870px) { html { font-size: 10px; }
+  .header-area, .header-area .header-area__fixed { height: 6rem !important; }
+  .header-area .header-area__grid h1 a { z-index: 2; -webkit-transform: scale(0.6); transform: scale(0.6); }
+  .header-area .header-area__util { position: fixed; top: 3.3rem; left: 2rem; text-align: left; }
+  .header-area .header-area__util .btn-icon--joytown { position: absolute; top: -1.7rem; right: 0; padding: 0.6rem; -webkit-transform: scale(0.7); transform: scale(0.7); -webkit-transform-origin: center right; transform-origin: center right; }
+  .btn-icon { padding: 0.2rem; }
+  .btn-icon + .btn-icon { margin-left: 0.2rem; }
+  .section-inner { padding: 6rem 2rem; }
+  .section-tit { font-size: 3.2rem; }
+  .tit-area { margin-bottom: 4rem; }
+  .main-visual { height: 80rem; }
+  .main-visual:after { width: 100%; left: 0; background-size: contain; }
+  .main-visual .section-tit { font-size: 4.6rem; }
+  .main-visual .main-visual__item:after { background-size: 119.84rem auto; background-position: center bottom 9rem; }
+  .main-visual .main-visual__img, .main-visual .main-visual__stage { -webkit-transform: scale(0.8); transform: scale(0.8); -webkit-transform-origin: center bottom; transform-origin: center bottom; }
+  .main-visual .main-icon.icon-avatar.n1 { margin-left: -36%; bottom: -3rem; }
+  .main-visual .main-icon.icon-avatar.n2 { margin-left: 32%; bottom: -1rem; }
+  .main-visual .main-visual__item.n1 .main-visual__avatar.n1 { top: 28rem; }
+  .main-service { z-index: 2; background: #fff; }
+  .main-service .section-inner { padding-left: 0; padding-right: 0; }
+  .main-service .section-tit { font-size: 3.8rem; }
+  .main-point { z-index: 3; }
+  .main-point .section-inner > .bg-icon.ps-right.n1 { top: 30%; }
+  .main-point .section-inner > .bg-icon.ps-right.n2 { top: 40%; }
+  .point-list { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .point-list .point-list__column { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; }
+  .point-list .point-list__box { margin: 1rem 0; }
+  .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner { width: 34rem; }
+  .main-service .tab-area { max-width: 67rem; margin-left: auto; margin-right: auto; }
+  .main-service .section-inner { padding-bottom: 40rem; }
+  .service-intro { position: absolute; bottom: 0; left: 50%; -webkit-transform: scale(0.8) translateX(-63%); transform: scale(0.8) translateX(-63%); overflow: visible; }
+  .main-service .bg-particle { -webkit-transform: scale(0.5); transform: scale(0.5); -webkit-transform-origin: top right; transform-origin: top right; z-index: -1; }
+  .main-point .big-logo-joytown { pointer-events: none; }
+  .main-point .big-logo-joytown img { -webkit-transform: scale(0.5); transform: scale(0.5); -webkit-transform-origin: center bottom; transform-origin: center bottom; }
+  .main-point { margin-top: -4rem; }
+  .main-point:before { pointer-events: none; }
+  .point-list .point-list__box { min-height: 0; height: 100%; font-size: 2rem; padding: 4rem 1rem; margin: 0; }
+  .point-list .point-list__visual { display: block; }
+  .point-list .point-list__visual img { width: 7.5rem; }
+  .point-list .point-list__row.point-list__row--divide { padding: 2rem 0; }
+  .point-list .point-list__row.point-list__row--divide .point-list__box { margin-bottom: 2rem; }
+  .point-list .point-list__column { padding-bottom: 3rem; }
+  .point-list .point-list__row { padding: 1rem 0; }
+  .live-slider-nextprev { z-index: 4; width: 7rem; height: 5rem; }
+  .point-list .point-list__desc { font-size: 1.4rem; }
+  .communicate-intro { margin-top: 3rem; }
+  .communicate-intro .communicate-intro__link-area { padding-right: 3rem; }
+  .communicate-intro { padding: 3rem 2rem; }
+  .communicate-link .communicate-link__tit { font-size: 2.8rem; }
+  .communicate-link .communicate-link__cont { min-width: 20rem; }
+  .communicate-tab { display: block; text-align: center; }
+  .communicate-tab:before { display: none; }
+  .communicate-tab .communicate-tab__thumb { width: 6rem; height: 6rem; margin-bottom: 0.6rem; }
+  .communicate-tab .communicate-tab__item { display: inline-block; background: none; padding: 0; margin: 0.6rem; }
+  .communicate-intro .communicate-intro__section { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .communicate-intro .communicate-intro__link-area { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; padding: 0 0 2rem; }
+  .communicate-intro .communicate-intro__cont { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; padding: 0; }
+  .communicate-intro .communicate-intro__cont { font-size: 1.6rem; }
+  .main-contact .section-tit { font-size: 3.4rem; }
+  .contact-area .contact-icon img { -webkit-transform: scale(0.6); transform: scale(0.6); }
+  .footer-area .footer-area__grid { padding: 4rem 2rem; font-size: 1.4rem; } }
 
 /* phone max
 **************************/
+@media screen and (max-width: 500px) { .only-tablet { display: none !important; } }
+
+@media screen and (max-width: 350px) { html { font-size: 8px; } }
