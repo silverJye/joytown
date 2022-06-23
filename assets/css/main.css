@@ -686,7 +686,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .live-slider .live-slider__item-inner:after { z-index: 10; top: 0; left: 0; position: absolute; display: block; width: 100%; height: 100%; background: #000; opacity: 0.3; border-radius: 3rem; content: ""; }
 
-.live-slider .live-slider__visual { border-radius: 3rem; height: 24rem; overflow: hidden; }
+.live-slider .live-slider__visual { border-radius: 3rem; height: 24rem; overflow: hidden; background: #000; }
 
 .live-slider .live-slider__visual img { display: block; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center bottom; object-position: center bottom; }
 
@@ -1071,7 +1071,8 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .contact-area .contact-icon-chat.n1 { margin-right: -16rem; }
   .contact-area .contact-icon-snack.n2 { bottom: auto; top: 10rem; }
   .footer-area .footer-area__grid { padding: 4rem 2rem; font-size: 1.4rem; }
-  .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner img, .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner iframe { width: 100%; }
+  .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner img { width: 100%; }
+  .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner iframe { width: 100%; height: 29rem; }
   .communicate-tab .communicate-tab__btn { font-size: 1.4rem; line-height: 1.2; }
   .communicate-intro { margin-top: 0; }
   .contact-card .contact-card__cont { margin: 0 2rem; }
