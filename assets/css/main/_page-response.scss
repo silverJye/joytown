@@ -384,8 +384,12 @@
 		font-size: 1.4rem;
 	}
 
-	.live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner img, .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner iframe {
+	.live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner img {
 		width: 100%;
+	}
+	.live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner iframe {
+		width: 100%;
+		height: 29rem;
 	}
 	.communicate-tab .communicate-tab__btn {
 		font-size: 1.4rem;
