@@ -1333,6 +1333,7 @@ body {
 	.communicate-intro__link-area {
 		flex: 0 0 50%;
 		padding-right: 6rem;
+		overflow: hidden;
 	}
 	.communicate-intro__cont {
 		@include typo-size-500;

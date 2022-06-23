@@ -730,7 +730,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 .communicate-intro .communicate-intro__section.communicate-intro__section--active { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: auto; overflow: visible; }
 
-.communicate-intro .communicate-intro__link-area { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; padding-right: 6rem; }
+.communicate-intro .communicate-intro__link-area { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; padding-right: 6rem; overflow: hidden; }
 
 .communicate-intro .communicate-intro__cont { font-size: 2rem; letter-spacing: -0.025em; line-height: 1.2; font-weight: 500; width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; padding: 1rem 6rem 1rem 0; }
 
@@ -990,8 +990,9 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .header-area .icon28 { width: 2rem; height: 2rem; }
   .header-area .header-area__grid h1 a { z-index: 2; -webkit-transform: scale(0.6); transform: scale(0.6); }
   .footer-area .footer-area__logo { -webkit-transform: scale(0.6); transform: scale(0.6); -webkit-transform-origin: top center; transform-origin: top center; margin-bottom: 1.2rem; }
-  .header-area .header-area__util { position: fixed; top: 3.3rem; left: 2rem; text-align: left; }
-  .header-area .header-area__util .btn-icon--joytown { position: absolute; top: -1.7rem; right: 0; padding: 0.6rem; -webkit-transform: scale(0.7); transform: scale(0.7); -webkit-transform-origin: center right; transform-origin: center right; }
+  .header-area .header-area__grid h1 { text-align: left; }
+  .header-area .header-area__grid h1 a { -webkit-transform-origin: left center; transform-origin: left center; }
+  .header-area .header-area__util .btn-icon--joytown { margin-left: 0; -webkit-transform-origin: center right; transform-origin: center right; }
   .btn-icon { padding: 0.2rem; }
   .btn-icon + .btn-icon { margin-left: 0.2rem; }
   .section-inner { padding: 6rem 2rem; }
@@ -1059,7 +1060,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .communicate-tab:before { display: none; }
   .communicate-tab .communicate-tab__thumb { width: 6rem; height: 6rem; margin-bottom: 0.6rem; border-width: 0.4rem; }
   .communicate-tab .communicate-tab__item { display: inline-block; background: none; padding: 0.6rem 0 0; margin: 0.6rem; vertical-align: top; }
-  .communicate-tab .communicate-tab__btn { padding: 0 0.1rem; }
+  .communicate-tab .communicate-tab__btn { padding: 0 0.1rem; overflow: visible; }
   .communicate-intro .communicate-intro__section { -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .communicate-intro .communicate-intro__link-area { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; padding: 0 0 2rem; }
   .communicate-intro .communicate-intro__cont { -webkit-box-flex: 1; -ms-flex: 1 1 100%; flex: 1 1 100%; padding: 0; }
@@ -1080,9 +1081,10 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 /* phone max
 **************************/
 @media screen and (max-width: 500px) { .only-tablet { display: none !important; }
-  .header-area .header-area__grid { padding: 0 1rem; }
+  .point-list .point-list__desc { opacity: 0; }
+  .point-list .point-list__arrow { opacity: 0; }
+  .point-list .point-list__row.point-list__row--divide { border: 0; }
   .header-area .header-area__grid h1 a { -webkit-transform: scale(0.45); transform: scale(0.45); }
-  .header-area .header-area__util { left: 1rem; right: 1rem; }
   /* 비주얼 모바일에서 scale*/
   .main-visual .main-visual__item:after { background-size: 74.9rem auto; background-position: center bottom 9rem; }
   .main-visual .main-visual__img, .main-visual .main-visual__stage { -webkit-transform: scale(0.5) translateY(-6.5rem); transform: scale(0.5) translateY(-6.5rem); -webkit-transform-origin: center bottom; transform-origin: center bottom; }

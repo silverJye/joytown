@@ -70,18 +70,29 @@
 		transform-origin: top center;
 		margin-bottom: 1.2rem;
 	}
-	.header-area .header-area__util {
-		position: fixed;
-		top: 3.3rem;
-		left: 2rem;
+	// .header-area .header-area__util {
+	// 	position: fixed;
+	// 	top: 3.3rem;
+	// 	left: 2rem;
+	// 	text-align: left;
+	// }
+	// .header-area .header-area__util .btn-icon--joytown {
+	// 	position: absolute;
+	// 	top: -1.7rem;
+	// 	right: 0;
+	// 	padding: 0.6rem;
+	// 	transform: scale(0.7);
+	// 	transform-origin: center right;
+	// }
+	.header-area .header-area__grid h1 {
 		text-align: left;
+
+		a {
+			transform-origin: left center;
+		}
 	}
 	.header-area .header-area__util .btn-icon--joytown {
-		position: absolute;
-		top: -1.7rem;
-		right: 0;
-		padding: 0.6rem;
-		transform: scale(0.7);
+		margin-left: 0;
 		transform-origin: center right;
 	}
 	.btn-icon {
@@ -335,6 +346,7 @@
 	}
 	.communicate-tab .communicate-tab__btn {
 		padding: 0 0.1rem;
+		overflow: visible;
 	}
 	.communicate-intro .communicate-intro__section {
 		flex-wrap: wrap;
@@ -401,16 +413,19 @@
 		display: none !important;
 	}
 
-	.header-area .header-area__grid {
-		padding: 0 1rem;
+	.point-list .point-list__desc {
+		opacity: 0;
 	}
+	.point-list .point-list__arrow {
+		opacity: 0;
+	}
+	.point-list .point-list__row.point-list__row--divide {
+		border: 0;
+	}
+
 	.header-area .header-area__grid h1 a {
 		transform: scale(0.45);
 		// margin-right: -2rem
-	}
-	.header-area .header-area__util {
-		left: 1rem;
-		right: 1rem;
 	}
 
 	
