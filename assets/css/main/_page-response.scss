@@ -195,6 +195,9 @@
 	.live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner {
 		width: 34rem;
 	}
+	.live-slider .live-slider__item .iframe-wrapper iframe {
+		object-fit: none;
+	}
 	.live-slider .live-slider__tit {
 		font-size: 2rem;
 	}

@@ -1023,6 +1023,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .point-list .point-list__column { -webkit-box-flex: 1; -ms-flex: 1 1 50%; flex: 1 1 50%; }
   .point-list .point-list__box { margin: 1rem 0; }
   .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner { width: 34rem; }
+  .live-slider .live-slider__item .iframe-wrapper iframe { -o-object-fit: none; object-fit: none; }
   .live-slider .live-slider__tit { font-size: 2rem; }
   .live-slider .live-slider__desc { font-size: 1.4rem; }
   .main-service .tab-area { max-width: 67rem; margin-left: auto; margin-right: auto; }
