@@ -1073,7 +1073,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .footer-area .footer-area__grid { padding: 4rem 2rem; font-size: 1.4rem; }
   .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner img { width: 100%; }
   .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner iframe { position: static; width: 100%; height: 29rem; }
-  .communicate-tab .communicate-tab__btn { font-size: 1.4rem; line-height: 1.2; }
+  .communicate-tab .communicate-tab__btn { font-size: 1.4rem; line-height: 1.2; padding-top: 1rem; background: red; }
   .communicate-intro { margin-top: 0; }
   .contact-card .contact-card__cont { margin: 0 2rem; }
   .contact-card .contact-card__cover { left: -1rem; right: -1rem; }
