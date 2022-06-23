@@ -1081,10 +1081,14 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
 
 /* phone max
 **************************/
-@media screen and (max-width: 500px) { .only-tablet { display: none !important; }
-  .point-list .point-list__desc { opacity: 0; }
-  .point-list .point-list__arrow { opacity: 0; }
-  .point-list .point-list__row.point-list__row--divide { border: 0; }
+@media screen and (max-width: 500px) { .no-mobile { display: none !important; }
+  .only-tablet { display: none !important; }
+  .point-list .point-list__desc { font-size: 1.2rem; }
+  .point-list .point-list__column { padding-bottom: 1rem; }
+  .point-list .point-list__row.point-list__row--divide { padding: 1rem 0; }
+  .point-list .point-list__row.point-list__row--divide .point-list__box { margin-bottom: 1rem; }
+  .point-list .point-list__arrow { -webkit-transform: scale(0.8); transform: scale(0.8); }
+  .point-list .point-list__arrow.point-list__arrow--top, .point-list .point-list__arrow.point-list__arrow--bottom { -webkit-transform: scale(0.8) rotate(-90deg); transform: scale(0.8) rotate(-90deg); }
   .header-area .header-area__grid h1 a { -webkit-transform: scale(0.45); transform: scale(0.45); }
   /* 비주얼 모바일에서 scale*/
   .main-visual .main-visual__item:after { background-size: 74.9rem auto; background-position: center bottom 9rem; }
@@ -1092,7 +1096,15 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .main-visual .main-visual__stage .balloon-area { -webkit-transform: scale(1.5); transform: scale(1.5); }
   .main-visual .main-icon.icon-avatar { -webkit-transform: scale(0.5); transform: scale(0.5); -webkit-transform-origin: center bottom; transform-origin: center bottom; margin-bottom: 2rem; }
   .main-visual .main-icon.icon-avatar .balloon-area { -webkit-transform: scale(1.5); transform: scale(1.5); }
-  .main-visual .section-tit { font-size: 3rem; }
+  .main-visual { height: 71rem; }
+  .main-visual .section-inner { padding-top: 6rem; }
+  .main-visual .main-visual__paging-area .main-visual__paging-item > span { display: none; }
+  .main-visual .section-tit { font-size: 3rem; text-align: center; }
+  .main-visual .main-visual__added { margin-left: auto; margin-right: auto; }
+  .main-visual .main-visual__paging-area .main-visual__paging-grid { top: 10rem; left: 0; right: 0; margin: 0 auto; height: auto; -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }
+  .main-visual .main-visual__paging-area .main-visual__paging-item { margin-bottom: 1.2rem; }
+  .main-visual .main-visual__paging-area .main-visual__paging-item:before { display: none; }
+  .main-visual .main-visual__paging-area .main-visual__paging-item:after { width: 0.6rem; height: 0.6rem; }
   .main-service .section-tit { font-size: 2.8rem; }
   .icon38 { width: 2.6rem; height: 2.6rem; }
   .icon54 { width: 3.2rem; height: 3.2rem; }
