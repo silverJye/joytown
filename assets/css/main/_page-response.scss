@@ -94,6 +94,7 @@
 	.header-area .header-area__util .btn-icon--joytown {
 		margin-left: 0;
 		transform-origin: center right;
+		transform: scale(0.8);
 	}
 	.btn-icon {
 		padding: 0.2rem;
@@ -217,6 +218,8 @@
 	}
 
 	.main-service .tab-area {
+		position: relative;
+		z-index: 2;
 		max-width: 67rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -396,7 +399,6 @@
 		font-size: 1.4rem;
 		line-height: 1.2;
 		padding-top: 1rem;
-		background: red;
 	}
 	.communicate-intro {
 		margin-top: 0;

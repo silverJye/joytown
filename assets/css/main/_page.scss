@@ -1926,5 +1926,12 @@ body {
 }
 
 
-
-
+.floating-area { z-index:99; position:fixed; bottom:0; left:50%; transform:translateX(-50%); max-width:1500px; width:100%; }
+.floating-util { position:absolute; right:1.5%; bottom:50px; width:6rem; border-radius:32px; overflow:hidden; background:#fff; transition:all ease-in-out .2s; }
+.floating-util button { display:block; position:relative; width:100%; height:6rem; background:url('/joytown/assets/images/main/sp_floating.png') 0 0/6rem auto no-repeat; padding:1.9rem 1.3rem 1.6rem; transition:background-color ease-in-out .2s; border:1px solid #dadadc; border-radius: 50%;} 
+.floating-util button + button:before { position:absolute; display:block; width:35px; left:1.3rem; top:-1px; height:2px; background:#e2e1e3; content:""; transition:opacity ease-in-out .2s; } 
+.is-home .floating-util button + button:before { opacity:0; }
+.floating-util button.kakao { height:96px; }
+.floating-util button.top { background-position-y:-96px; overflow:hidden; }
+.floating-util button:hover { background-color:#f1f1f1 }
+.is-home .floating-util { opacity:0; transform: translateY(1rem);}

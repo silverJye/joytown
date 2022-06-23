@@ -994,6 +994,12 @@
                     </div>
                 </div>
             </section>
+
+            <div class="floating-area">
+				<div class="floating-util">
+					<button type="button" class="top"></button>
+				</div>
+			</div>
         </main>
 
         <footer id="footer" class="footer-area">
@@ -1027,10 +1033,18 @@
 
                         if ($(window).scrollTop() > 0){
                             $headerArea.addClass('is-small');
+                            document.body.classList.remove('is-home');
                             return;
                         }
                         $headerArea.removeClass('is-small');
+                        document.body.classList.add('is-home');
                     }
+                    
+                    $('.floating-util .top').on('click', function(){
+                        $('body, html').animate({
+                            scrollTop: 0
+                        }, 200)
+                    })
 
 
                     $('.communicate-tab__item button').on('click', function(){

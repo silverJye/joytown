@@ -968,6 +968,24 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
     opacity: 1; }
   85%, 100% { opacity: 0; } }
 
+.floating-area { z-index: 99; position: fixed; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); max-width: 1500px; width: 100%; }
+
+.floating-util { position: absolute; right: 1.5%; bottom: 50px; width: 6rem; border-radius: 32px; overflow: hidden; background: #fff; -webkit-transition: all ease-in-out .2s; transition: all ease-in-out .2s; }
+
+.floating-util button { display: block; position: relative; width: 100%; height: 6rem; background: url("/joytown/assets/images/main/sp_floating.png") 0 0/6rem auto no-repeat; padding: 1.9rem 1.3rem 1.6rem; -webkit-transition: background-color ease-in-out .2s; transition: background-color ease-in-out .2s; border: 1px solid #dadadc; border-radius: 50%; }
+
+.floating-util button + button:before { position: absolute; display: block; width: 35px; left: 1.3rem; top: -1px; height: 2px; background: #e2e1e3; content: ""; -webkit-transition: opacity ease-in-out .2s; transition: opacity ease-in-out .2s; }
+
+.is-home .floating-util button + button:before { opacity: 0; }
+
+.floating-util button.kakao { height: 96px; }
+
+.floating-util button.top { background-position-y: -96px; overflow: hidden; }
+
+.floating-util button:hover { background-color: #f1f1f1; }
+
+.is-home .floating-util { opacity: 0; -webkit-transform: translateY(1rem); transform: translateY(1rem); }
+
 /* only pc
 **************************/
 @media screen and (min-width: 871px) { .only-tablet, .only-resp { display: none !important; } }
@@ -992,7 +1010,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .footer-area .footer-area__logo { -webkit-transform: scale(0.6); transform: scale(0.6); -webkit-transform-origin: top center; transform-origin: top center; margin-bottom: 1.2rem; }
   .header-area .header-area__grid h1 { text-align: left; }
   .header-area .header-area__grid h1 a { -webkit-transform-origin: left center; transform-origin: left center; }
-  .header-area .header-area__util .btn-icon--joytown { margin-left: 0; -webkit-transform-origin: center right; transform-origin: center right; }
+  .header-area .header-area__util .btn-icon--joytown { margin-left: 0; -webkit-transform-origin: center right; transform-origin: center right; -webkit-transform: scale(0.8); transform: scale(0.8); }
   .btn-icon { padding: 0.2rem; }
   .btn-icon + .btn-icon { margin-left: 0.2rem; }
   .section-inner { padding: 6rem 2rem; }
@@ -1027,7 +1045,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .live-slider .live-slider__item .iframe-wrapper iframe { -o-object-fit: none; object-fit: none; }
   .live-slider .live-slider__tit { font-size: 2rem; }
   .live-slider .live-slider__desc { font-size: 1.4rem; }
-  .main-service .tab-area { max-width: 67rem; margin-left: auto; margin-right: auto; }
+  .main-service .tab-area { position: relative; z-index: 2; max-width: 67rem; margin-left: auto; margin-right: auto; }
   .main-service .section-inner { padding-bottom: 40rem; }
   .service-intro { position: absolute; bottom: 0; left: 50%; -webkit-transform: scale(0.8) translateX(-63%); transform: scale(0.8) translateX(-63%); overflow: visible; }
   .main-service .bg-particle { -webkit-transform: scale(0.5); transform: scale(0.5); -webkit-transform-origin: top right; transform-origin: top right; z-index: -1; }
@@ -1073,7 +1091,7 @@ body { color: #111; font-size: 1.4rem; font-family: "notokr", "Noto Sans KR", "A
   .footer-area .footer-area__grid { padding: 4rem 2rem; font-size: 1.4rem; }
   .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner img { width: 100%; }
   .live-slider .live-slider__item.swiper-slide-active .live-slider__item-inner iframe { position: static; width: 100%; height: 29rem; }
-  .communicate-tab .communicate-tab__btn { font-size: 1.4rem; line-height: 1.2; padding-top: 1rem; background: red; }
+  .communicate-tab .communicate-tab__btn { font-size: 1.4rem; line-height: 1.2; padding-top: 1rem; }
   .communicate-intro { margin-top: 0; }
   .contact-card .contact-card__cont { margin: 0 2rem; }
   .contact-card .contact-card__cover { left: -1rem; right: -1rem; }
