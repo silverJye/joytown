@@ -434,6 +434,10 @@
 		// padding: 0;
 	}
 
+	.communicate-link:hover .communicate-link__bg, .communicate-link:focus .communicate-link__bg {
+		transform: none;
+	}
+
 	.live-slider {
 		margin: 0 -2rem;
 	}
