@@ -1142,10 +1142,11 @@
                     });
 
                     const swiper = new Swiper('.live-slider', {
-                        slidesPerView: 3,
+                        slidesPerView: 1,
                         centeredSlides: true,
                         speed: 400,
-                        spaceBetween: 6,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
                         loop: true,
                         navigation: {
                             nextEl: '.main-live .swiper-button-next',
@@ -1160,7 +1161,8 @@
                                 slidesPerView: 5,  //브라우저가 768보다 클 때
                             },
                             500: {
-                                slidesPerView: 3
+                                slidesPerView: 3,
+                                spaceBetween: 6,
                             }
                         },
                     });
