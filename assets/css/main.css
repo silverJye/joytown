@@ -3542,6 +3542,10 @@ body {
   .only-tablet {
     display: none !important;
   }
+  .communicate-link:hover .communicate-link__bg, .communicate-link:focus .communicate-link__bg {
+    -webkit-transform: none;
+            transform: none;
+  }
   .live-slider {
     margin: 0 -2rem;
   }
